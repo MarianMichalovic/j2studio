@@ -16,7 +16,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="px-6 py-12 border-t border-gray-100">
+    <footer className="px-6 py-12 border-t border-gray-100 relative">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col space-y-8">
           {/* Main footer content */}
@@ -77,10 +77,14 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="pt-8 border-t border-gray-100 text-center text-sm text-gray-500">
+          <div className="pt-8 border-t border-gray-100 text-center text-sm text-gray-500 pb-4">
             © 2025 J2Studio Design s.r.o. Všetky práva vyhradené.
           </div>
         </div>
+      </div>
+      <div className="absolute w-full flex items-center justify-center bottom-0 left-0 h-12 bg-gray-900">
+        <a href="https://spacesolutions.sk/" target="_blank">
+        <img src="space.png" alt="space logo" className="w-40 lg:w-56"/></a>
       </div>
     </footer>
   )
