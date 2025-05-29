@@ -9,8 +9,11 @@ export default function Services() {
   return (
     <section className="py-24" ref={servicesRef}>
       <div className="grid lg:grid-cols-2">
+        {/* Obrázok – order podľa rozlíšenia */}
         <div
-          className={`relative min-h-[60vh] lg:min-h-[80vh] transition-all duration-1000 delay-300 ${servicesInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
+          className={`relative min-h-[60vh] lg:min-h-[80vh] transition-all duration-1000 delay-300 
+            ${servicesInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"} 
+            order-2 lg:order-1`}
         >
           <Image
             src="/slider/1.jpg"
@@ -20,11 +23,14 @@ export default function Services() {
           />
         </div>
 
+        {/* Textová časť – order podľa rozlíšenia */}
         <div
-          className={`px-6 lg:px-12 flex flex-col justify-center transition-all duration-1000 ${servicesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          className={`px-6 lg:px-12 flex flex-col justify-center transition-all duration-1000 
+            ${servicesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"} 
+            order-1 lg:order-2`}
         >
-          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-3">Čo ponúkame</h2>
-          <div className="w-64 h-1 bg-orange-300 ml-40 mb-6" />
+          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-1 lg:mb-3">Čo ponúkame</h2>
+          <div className="w-48 lg:w-64 h-1 bg-orange-300 ml-24 lg:ml-40 mb-6" />
 
           <div className="space-y-8">
             <div

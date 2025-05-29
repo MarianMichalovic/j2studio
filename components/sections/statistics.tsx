@@ -46,7 +46,7 @@ export default function Statistics() {
   return (
     <section className="px-6 py-24 bg-gray-50" ref={statsRef}>
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
             <div
               key={index}

@@ -30,7 +30,7 @@ export default function AboutPage() {
               O{" "}
               <span className="relative">
                 nás
-                <div className="absolute -bottom-2 -right-8 w-full h-0.5 bg-black"></div>
+                <div className="absolute -bottom-2 -right-8 w-full h-1 bg-orange-300"></div>
               </span>
             </h1>
             <p
@@ -38,8 +38,7 @@ export default function AboutPage() {
                 heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Sme tím vášnivých architektov a vývojárov, ktorí sa venujú vytváraniu výnimočných priestorov, ktoré
-              redefinujú moderné bývanie.
+              Sme slovenská firma zameraná na výrobu dizajnového nábytku na mieru, ktorý spája precízne remeselné spracovanie, inovatívny dizajn a funkčnosť bez kompromisov.
             </p>
           </div>
         </div>
@@ -55,13 +54,10 @@ export default function AboutPage() {
           >
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-8">Náš príbeh</h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Založená v roku 2010, Skyline sa rozrástla z malej architektonickej firmy na vedúcu silu v luxusnom
-              rozvoji nehnuteľností. Naša cesta začala jednoduchou víziou: vytvárať priestory, ktoré inšpirujú a
-              povznášajú ľudskú skúsenosť.
+            Už niekoľko rokov pomáhame klientom premeniť ich predstavy o ideálnom bývaní na skutočnosť – od prvotného návrhu až po montáž hotového nábytku priamo u vás doma.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Dnes pokračujeme v posúvaní hraníc dizajnu a inovácií, dodávame projekty, ktoré stoja ako svedectvo nášho
-              záväzku k dokonalosti a udržateľnosti.
+            <p className="text-lg text-gray-600 leading-relaxed pb-12 lg:pb-0">
+            Naše projekty realizujeme po celom Slovensku, bez ohľadu na lokalitu. Či už ide o moderný byt v meste, útulný rodinný dom na vidieku alebo firemné priestory, vždy prinášame riešenia šité na mieru priestoru aj životnému štýlu.
             </p>
           </div>
           <div
@@ -70,7 +66,7 @@ export default function AboutPage() {
             }`}
           >
             <Image
-              src="/placeholder.svg?height=800&width=800&query=modern office building architecture team working"
+              src="/about.jpg"
               alt="Náš príbeh"
               fill
               className="object-cover"
@@ -134,63 +130,6 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section className="py-24" ref={leadershipRef}>
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2
-              className={`text-4xl lg:text-5xl font-light text-gray-900 mb-4 transition-all duration-1000 ${
-                leadershipInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              Vedenie
-            </h2>
-            <p
-              className={`text-gray-600 transition-all duration-1000 delay-200 ${
-                leadershipInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              Spoznajte vizionárov za Skyline
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            {[
-              {
-                name: "Mária Svobodová",
-                role: "Zakladateľka a CEO",
-                bio: "S viac ako 20 rokmi v architektúre založila Mária Skyline s víziou revolúcie luxusných obytných priestorov.",
-              },
-              {
-                name: "Tomáš Novák",
-                role: "Hlavný architekt",
-                bio: "Tomáš prináša inovatívne dizajnové myslenie a udržateľné praktiky do každého projektu Skyline.",
-              },
-            ].map((leader, index) => (
-              <div
-                key={index}
-                className={`text-center transition-all duration-1000 ${
-                  leadershipInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-                style={{ transitionDelay: `${index * 200 + 300}ms` }}
-              >
-                <div className="relative h-80 mb-6 overflow-hidden rounded-sm">
-                  <Image
-                    src={`/placeholder.svg?height=400&width=400&query=professional portrait ${leader.name} CEO architect`}
-                    alt={leader.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-2">{leader.name}</h3>
-                <p className="text-sm text-gray-500 mb-4">{leader.role}</p>
-                <p className="text-gray-600">{leader.bio}</p>
               </div>
             ))}
           </div>

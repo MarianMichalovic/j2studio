@@ -88,20 +88,6 @@ export default function ContactPage() {
                   <Input type="tel" className="rounded-none border-gray-300 focus:border-black" />
                 </div>
                 <div
-                  className={`transition-all duration-1000 delay-400 ${
-                    formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Typ projektu</label>
-                  <select className="w-full px-3 py-2 border border-gray-300 focus:border-black focus:outline-none">
-                    <option>Rezidenčný</option>
-                    <option>Komerčný</option>
-                    <option>Zmiešané použitie</option>
-                    <option>Rekonštrukcia</option>
-                    <option>Konzultácia</option>
-                  </select>
-                </div>
-                <div
                   className={`transition-all duration-1000 delay-500 ${
                     formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                   }`}
@@ -143,9 +129,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-gray-900 mb-1">Umiestnenie kancelárie</h3>
                     <p className="text-gray-600">
-                      Architektonická 123
+                      Artézskych prameňov 1
                       <br />
-                      Bratislava 811 01
+                      984 01 Lučenec
                       <br />
                       Slovenská republika
                     </p>
@@ -160,7 +146,7 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6 text-gray-400 mt-1" />
                   <div>
                     <h3 className="font-medium text-gray-900 mb-1">Telefón</h3>
-                    <p className="text-gray-600">+421 (2) 123-4567</p>
+                    <p className="text-gray-600">+421 903 140 332</p>
                   </div>
                 </div>
 
@@ -172,7 +158,7 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 text-gray-400 mt-1" />
                   <div>
                     <h3 className="font-medium text-gray-900 mb-1">E-mail</h3>
-                    <p className="text-gray-600">ahoj@skyline.sk</p>
+                    <p className="text-gray-600">j2studiointerior@gmail.com</p>
                   </div>
                 </div>
 
@@ -193,16 +179,6 @@ export default function ContactPage() {
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* Map placeholder */}
-              <div
-                className={`mt-12 h-64 bg-gray-100 rounded-sm flex items-center justify-center transition-all duration-1000 delay-500 ${
-                  infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-                ref={mapRef}
-              >
-                <p className="text-gray-500">Interaktívna mapa</p>
               </div>
             </div>
           </div>

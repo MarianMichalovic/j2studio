@@ -7,7 +7,7 @@ export default function Newsletter() {
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl lg:text-4xl font-light text-white mb-4">Zostaňte informovaní</h2>
         <p className="text-gray-400 mb-8">
-          Získajte najnovšie nehnuteľnosti a prehľady trhu priamo do vašej e-mailovej schránky.
+          Získajte najnovšie katalóg našich produktov a aktuálnych projektov priamo do Vášej emailovej schránky.
         </p>
 
         <div className="flex max-w-md mx-auto">

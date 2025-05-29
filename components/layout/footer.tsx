@@ -23,19 +23,22 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="mb-4 md:mb-0">
               <Link href="/" className="flex items-center space-x-2 mb-4">
-                <Building2 className="w-5 h-5 text-black" />
-                <span className="font-medium">Skyline</span>
+                <img
+            src="/logo.png"
+            alt="logo spolocnosti"
+            className="w-32 md:w-40 object-contain"
+          />
               </Link>
 
               {/* Contact Info */}
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-sm text-gray-600">
                   <Mail className="w-4 h-4" />
-                  <span>ahoj@skyline.sk</span>
+                  <span>j2studiointerior@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm text-gray-600">
                   <Phone className="w-4 h-4" />
-                  <span>+421 (2) 123-4567</span>
+                  <span>+421 903 140 332</span>
                 </div>
               </div>
             </div>
@@ -75,7 +78,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="pt-8 border-t border-gray-100 text-center text-sm text-gray-500">
-            © 2024 Skyline s.r.o. Všetky práva vyhradené.
+            © 2025 J2Studio Design s.r.o. Všetky práva vyhradené.
           </div>
         </div>
       </div>

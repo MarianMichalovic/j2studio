@@ -41,7 +41,7 @@ export default function Testimonials() {
 
   return (
     <section
-      className="px-6 py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100"
+      className="px-2 lg:px-6 py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100"
       ref={testimonialsRef}
     >
       <div className="max-w-4xl mx-auto">
@@ -51,25 +51,25 @@ export default function Testimonials() {
             testimonialsInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-4xl lg:text-5xl font-light text-gray-900">
+          <h2 className="text-3xl lg:text-5xl font-light text-gray-900">
             Príbehy klientov
           </h2>
           <div className="flex items-center space-x-2">
             <button
               onClick={prevSlide}
-              className="w-16 h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
+              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-16 h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
+              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>
         </div>
-        <div className="w-64 h-1 bg-orange-300 ml-40 mb-16" />
+        <div className="w-48 lg:w-64 h-1 bg-orange-300 ml-16 lg:ml-40 mb-16" />
 
         <div className="relative">
           {/* Obsah recenzií */}

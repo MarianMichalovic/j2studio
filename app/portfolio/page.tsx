@@ -6,6 +6,8 @@ import { ArrowRight, MapPin, Calendar } from "lucide-react"
 import { useRef } from "react"
 import { useInView } from "@/hooks/use-in-view"
 
+import Link from "next/link"
+
 export default function PortfolioPage() {
   const projects = [
     {
@@ -82,7 +84,7 @@ export default function PortfolioPage() {
               Naše{" "}
               <span className="relative">
                 portfólio
-                <div className="absolute -bottom-3 -left-12 w-3/4 h-0.5 bg-black"></div>
+                <div className="absolute -bottom-3 -left-12 w-3/4 h-1 bg-orange-300"></div>
               </span>
             </h1>
             <p
@@ -110,7 +112,7 @@ export default function PortfolioPage() {
             >
               <div className="relative h-96 overflow-hidden">
                 <Image
-                  src={`/placeholder.svg?height=600&width=600&query=${project.title} modern architecture building`}
+                  src="/slider/1.jpg"
                   alt={project.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -132,14 +134,6 @@ export default function PortfolioPage() {
                     </div>
                   </div>
                   <p className="text-sm opacity-90 mb-4">{project.description}</p>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-fit border-white text-white hover:bg-white hover:text-black"
-                  >
-                    Zobraziť detaily
-                    <ArrowRight className="w-3 h-3 ml-2" />
-                  </Button>
                 </div>
               </div>
             </div>
@@ -159,10 +153,12 @@ export default function PortfolioPage() {
           <p className="text-xl text-gray-600 mb-12">
             Poďme prediskutovať, ako môžeme oživiť vašu víziu s našimi odbornými znalosťami a inováciami.
           </p>
+          <Link href={"/contact"}>
           <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-none">
             Kontaktujte nás
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
+          </Link>
         </div>
       </section>
     </div>
