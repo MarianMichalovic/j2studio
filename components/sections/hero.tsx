@@ -23,10 +23,10 @@ export default function Hero() {
     <section ref={heroRef}>
       <div className="grid lg:grid-cols-2 min-h-screen">
         <div
-          className={`px-6 lg:px-12 flex flex-col justify-center transition-all duration-1000 ${heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          className={`px-6 lg:px-12 pt-12 lg:mt-20 flex flex-col justify-center transition-all duration-1000 ${heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <h1 className="text-6xl lg:text-7xl font-light text-gray-900 mb-4 leading-tight">
-            Návrh<span className="font-thin text-7xl lg:text-8xl text-orange-300">&</span>realizácie
+          <h1 className="text-3xl lg:text-7xl font-light text-gray-900 mb-4 leading-tight">
+            Návrh<span className="font-thin text-4xl lg:text-8xl text-orange-300">&</span>realizácie
             <br />
             Dizajnových interiérov na mieru
           </h1>
