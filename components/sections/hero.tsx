@@ -57,9 +57,9 @@ export default function Hero() {
         >
           {/* Slideshow Images */}
           {[
-            "/slider/1.jpg",
-            "/slider/2.jpg",
-            "/slider/3.jpg",
+            "/anywebp/kuch2.webp",
+            "/anywebp/telka2.webp",
+            "/anywebp/skrina2.webp",
           ].map((src, index) => (
             <Image
               key={index}

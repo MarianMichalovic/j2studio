@@ -57,13 +57,13 @@ export default function Testimonials() {
           <div className="flex items-center space-x-2">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
+              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-orange-300 transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors"
+              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-orange-300 transition-colors"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

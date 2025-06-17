@@ -18,6 +18,7 @@ export default function PortfolioPage() {
       category: "Rezidenčné",
       description:
         "40-poschodový luxusný rezidenčný komplex s udržateľným dizajnom a panoramatickým výhľadom na mesto.",
+      image: "/anywebp/telka0.webp"
     },
     {
       id: 2,
@@ -27,6 +28,7 @@ export default function PortfolioPage() {
       category: "Komerčné",
       description:
         "Moderný kancelársky komplex s inovatívnym dizajnom pracovných priestorov a certifikáciou zelenej budovy.",
+      image: "/anywebp/skrina3.webp"
     },
     {
       id: 3,
@@ -35,6 +37,7 @@ export default function PortfolioPage() {
       year: "2022",
       category: "Rezidenčné",
       description: "Exkluzívne vily na nábreží kombinujúce luxusné bývanie s environmentálnym vedomím.",
+      image: "/anywebp/kuch3.webp"
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ export default function PortfolioPage() {
       year: "2022",
       category: "Komerčné",
       description: "Technologický kampus navrhnutý na podporu kreativity a spolupráce v udržateľnom prostredí.",
+      image: "/anywebp/kuch2.webp"
     },
     {
       id: 5,
@@ -51,6 +55,7 @@ export default function PortfolioPage() {
       year: "2021",
       category: "Rezidenčné",
       description: "Zmiešaný vývojový projekt integrujúci rezidenčné, maloobchodné a zelené priestory.",
+      image: "/anywebp/kup1.webp"
     },
     {
       id: 6,
@@ -59,6 +64,7 @@ export default function PortfolioPage() {
       year: "2021",
       category: "Komerčné",
       description: "Ikonický mrakodrap redefinujúci panorámu mesta s najmodernejšou architektúrou.",
+      image: "/anywebp/telka2.webp"
     },
   ]
 
@@ -112,7 +118,7 @@ export default function PortfolioPage() {
             >
               <div className="relative h-96 overflow-hidden">
                 <Image
-                  src="/slider/1.jpg"
+                  src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"

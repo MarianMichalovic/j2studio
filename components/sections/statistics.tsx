@@ -2,16 +2,17 @@
 
 import { useInView } from "@/hooks/use-in-view"
 import { useState, useEffect } from "react"
+import { HomeIcon, MapPinIcon, ChartBarIcon, UserGroupIcon } from "@heroicons/react/24/outline"
 
 export default function Statistics() {
   const [statsRef, statsInView] = useInView()
   const [hasAnimated, setHasAnimated] = useState(false)
 
   const stats = [
-    { number: 8021, label: "Nehnuteľnosti" },
-    { number: 56, label: "Lokality" },
-    { number: 1025, label: "Predaje" },
-    { number: 215, label: "Agenti" },
+    { number: 8021, label: "Nehnuteľnosti", icon: HomeIcon },
+    { number: 56, label: "Lokality", icon: MapPinIcon },
+    { number: 1025, label: "Predaje", icon: ChartBarIcon },
+    { number: 215, label: "Agenti", icon: UserGroupIcon },
   ]
 
   const [animatedNumbers, setAnimatedNumbers] = useState(stats.map(() => 0))
@@ -53,6 +54,9 @@ export default function Statistics() {
               className={`text-center transition-all duration-1000 group ${statsInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
+              <div className="flex justify-center mb-4">
+                <stat.icon className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="relative inline-block text-3xl font-light text-gray-900 mb-2">
                 <span className="relative z-10">
                   {animatedNumbers[index].toLocaleString()}

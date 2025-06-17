@@ -27,7 +27,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full h-20 bg-white border-b border-gray-200 z-[9999]">
+    <div className="fixed top-0 left-0 w-full h-32 bg-white border-b border-gray-200 z-[9999]">
       <div className="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
         <Link
           href="/"
@@ -35,14 +35,14 @@ export default function Navbar() {
           onClick={() => handleNavClick("/")}
         >
           <img
-            src="/logo.png"
+            src="/anywebp/logo.jpg"
             alt="logo spolocnosti"
-            className="w-32 md:w-40 object-contain"
+            className="w-16 md:w-28 absolute top-2 object-contain"
           />
         </Link>
 
         {/* Desktop navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-12">
           {navItems.map((item) => (
             <button
               key={item.href}

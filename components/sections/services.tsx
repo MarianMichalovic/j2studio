@@ -16,7 +16,7 @@ export default function Services() {
             order-2 lg:order-1`}
         >
           <Image
-            src="/slider/1.jpg"
+            src="/anywebp/kuch4.webp"
             alt="Architektúra"
             fill
             className="object-cover hover:scale-105 transition-transform duration-700"

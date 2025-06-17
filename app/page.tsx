@@ -10,6 +10,7 @@ import Team from "@/components/sections/team"
 import Process from "@/components/sections/process"
 import Locations from "@/components/sections/locations"
 import Newsletter from "@/components/sections/newsletter"
+import CTA from "@/components/sections/cta"
 
 export default function HomePage() {
   return (
@@ -25,6 +26,9 @@ export default function HomePage() {
 
       {/* Portfolio */}
       <Portfolio />
+
+      {/* CTA Section */}
+      <CTA />
 
       {/* Full Width Image Break */}
       <ImageBreak />

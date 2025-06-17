@@ -24,12 +24,15 @@ export default function Process() {
           ].map((item, index) => (
             <div
               key={index}
-              className={`text-center transition-all duration-1000 ${processInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`text-center transition-all duration-1000 relative group ${processInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="text-4xl font-light text-gray-300 mb-4">{item.step}</div>
-              <h3 className="text-lg font-medium text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm">{item.desc}</p>
+              <div className="absolute inset-0 border-2 border-gray-300 transition-all duration-300 group-hover:border-gray-400 opacity-0 group-hover:opacity-100" />
+              <div className="relative p-6">
+                <div className="text-4xl font-light text-gray-300 mb-4 transition-colors duration-300 group-hover:text-orange-500">{item.step}</div>
+                <h3 className="text-lg font-medium text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>

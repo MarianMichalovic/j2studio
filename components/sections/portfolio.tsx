@@ -12,27 +12,30 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "Moderná vila 1",
+      title: "Kuchynská linka",
       subtitle: "Súčasný dizajn s udržateľnými prvkami",
       details:
-        "Táto úžasná 4-izbová vila má okná od podlahy po strop, solárne panely, systém zberania dažďovej vody a minimalistický dizajn, ktorý bezproblémovo spája vnútorné a vonkajšie obytné priestory. Nachádza sa v srdci mesta s panoramatickým výhľadom.",
-      specs: "4 spálne • 3 kúpeľne • 3 200 m² • Dokončené 2023",
+        "Pre klientov sme navrhli a zrealizovali kuchyňu, ktorá spája čisté línie, praktické úložné riešenia a jemné farebné kontrasty. Dominantou priestoru je ostrovček s pracovnou doskou z kompozitného materiálu, ktorý slúži aj ako jedálenský pult.",
+      specs: "• Dokončené 2023",
+      image: "/anywebp/kuch1.webp"
     },
     {
       id: 2,
-      title: "Moderná vila 2",
+      title: "Obloženie obývacej izby",
       subtitle: "Súčasný dizajn s udržateľnými prvkami",
       details:
-        "Architektonické majstrovské dielo s technológiou inteligentnej domácnosti, geotermálnym vykurovaním, zelenými strechovými systémami a prémiovými povrchovými úpravami. Otvorený dizajn maximalizuje prirodzené svetlo pri zachovaní súkromia a pohodlia.",
-      specs: "5 spální • 4 kúpeľne • 4 100 m² • Dokončené 2023",
+        "Dizajnový obklad za televíziou sme navrhli ako dominantný prvok interiéru, ktorý zároveň pôsobí harmonicky a zútulňuje celý priestor. Použité boli prírodné dekory s jemnou štruktúrou, LED podsvietenie a skryté vedenie kabeláže pre čistý vizuálny dojem.",
+      specs: "• Dokončené 2023",
+      image: "/anywebp/telka2.webp"
     },
     {
       id: 3,
-      title: "Moderná vila 3",
+      title: "Vstavaný šatník",
       subtitle: "Súčasný dizajn s udržateľnými prvkami",
       details:
-        "Táto luxusná rezidencia predstavuje inovatívny dizajn s udržateľnými materiálmi, energeticky efektívnymi systémami a úchvatnými výhľadmi. Medzi funkcie patrí strešná záhrada, nekonečný bazén a najmodernejšia domáca automatizácia.",
-      specs: "3 spálne • 2 kúpeľne • 2 800 m² • Dokončené 2024",
+        "Projekt šatníka bol navrhnutý s dôrazom na ergonómiu, maximálne využitie priestoru a elegantný vzhľad. Klientovi sme dodali šatníkový systém s kombináciou otvorených políc, zásuviek a tyčí na zavesenie.",
+      specs: "• Dokončené 2023",
+      image: "/anywebp/skrina2.webp"
     },
   ]
 
@@ -57,7 +60,7 @@ export default function Portfolio() {
           >
             <div className="relative h-80 lg:h-96 overflow-hidden">
               <Image
-                src={`/slider/1.jpg`}
+                src={project.image}
                 alt={project.title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"

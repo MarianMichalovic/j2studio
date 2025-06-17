@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="mb-4 md:mb-0">
               <Link href="/" className="flex items-center space-x-2 mb-4">
                 <img
-            src="/logo.png"
+            src="/anywebp/logo.jpg"
             alt="logo spolocnosti"
             className="w-32 md:w-40 object-contain"
           />

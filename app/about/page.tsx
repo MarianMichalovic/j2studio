@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Building2, Users, Award, Target } from "lucide-react"
 import { useRef } from "react"
 import { useInView } from "@/hooks/use-in-view"
+import CTA from "@/components/sections/cta"
 
 export default function AboutPage() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -66,7 +67,7 @@ export default function AboutPage() {
             }`}
           >
             <Image
-              src="/about.jpg"
+              src="/anywebp/kuch5.webp"
               alt="Náš príbeh"
               fill
               className="object-cover"
@@ -74,6 +75,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTA />
 
       {/* Values Section */}
       <section className="px-6 py-24 bg-gray-50" ref={valuesRef}>
@@ -105,7 +109,7 @@ export default function AboutPage() {
               {
                 icon: Users,
                 title: "Spolupráca",
-                desc: "Úzka spolupráca s klientmi pri oživovaní ich vízií.",
+                desc: "Úzka spolupráca s našimi klientmi pri oživovaní všetkých ich vízií a predstáv.",
               },
               {
                 icon: Award,
@@ -120,13 +124,13 @@ export default function AboutPage() {
             ].map((value, index) => (
               <div
                 key={index}
-                className={`text-center transition-all duration-1000 ${
+                className={`text-center transition-all duration-1000 group ${
                   valuesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{ transitionDelay: `${index * 100 + 300}ms` }}
               >
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300 group-hover:bg-orange-300">
+                  <value.icon className="w-8 h-8 text-white group-hover:text-black transition-colors duration-300" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.desc}</p>
