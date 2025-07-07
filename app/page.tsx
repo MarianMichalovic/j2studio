@@ -11,12 +11,24 @@ import Process from "@/components/sections/process"
 import Locations from "@/components/sections/locations"
 import Newsletter from "@/components/sections/newsletter"
 import CTA from "@/components/sections/cta"
+import PartnerBanner from "@/components/sections/partner-banner"
+import VideoBanner from "@/components/sections/video-banner"
+import LogoBanner from "@/components/sections/logo-banner"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <Hero />
+
+      {/* Partner Banner */}
+      <PartnerBanner />
+      
+      {/* Video Banner */}
+      <VideoBanner />
+
+      {/* Logo Banner */}
+      <LogoBanner/>
 
       {/* Services */}
       <Services />

@@ -37,6 +37,33 @@ export default function Portfolio() {
       specs: "• Dokončené 2023",
       image: "/anywebp/skrina2.webp"
     },
+    {
+      id: 4,
+      title: "Kuchyňa",
+      subtitle: "Súčasný dizajn s udržateľnými prvkami",
+      details:
+        "Pre klientov sme navrhli a zrealizovali kuchyňu, ktorá spája čisté línie, praktické úložné riešenia a jemné farebné kontrasty. Dominantou priestoru je ostrovček s pracovnou doskou z kompozitného materiálu, ktorý slúži aj ako jedálenský pult.",
+      specs: "• Dokončené 2023",
+      image: "/new/tretia.jpg"
+    },
+    {
+      id: 5,
+      title: "Vstavaná skrina",
+      subtitle: "Súčasný dizajn s udržateľnými prvkami",
+      details:
+        "Dizajnovú vstavanú skriňu sme navrhli ako dominantný prvok interiéru, ktorý zároveň pôsobí harmonicky a zútulňuje celý priestor. Použité boli prírodné dekory s jemnou štruktúrou.",
+      specs: "• Dokončené 2023",
+      image: "/new/prva.jpg"
+    },
+    {
+      id: 6,
+      title: "Kuchyňa",
+      subtitle: "Súčasný dizajn s udržateľnými prvkami",
+      details:
+        "Projekt šatníka bol navrhnutý s dôrazom na ergonómiu, maximálne využitie priestoru a elegantný vzhľad. Klientovi sme dodali šatníkový systém s kombináciou otvorených políc, zásuviek a tyčí na zavesenie.",
+      specs: "• Dokončené 2023",
+      image: "/new/stvrta.jpg"
+    },
   ]
 
   return (

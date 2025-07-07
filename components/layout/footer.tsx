@@ -34,11 +34,15 @@ export default function Footer() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-sm text-gray-600">
                   <Mail className="w-4 h-4" />
-                  <span>j2studiointerior@gmail.com</span>
+                  <span>info@j2studio.eu</span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm text-gray-600">
                   <Phone className="w-4 h-4" />
                   <span>+421 903 140 332</span>
+                </div>
+                <div className="flex items-center space-x-2 text-sm text-gray-600">
+                  <Phone className="w-4 h-4" />
+                  <span>+421 948 890 885</span>
                 </div>
               </div>
             </div>
@@ -78,7 +82,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="pt-8 border-t border-gray-100 text-center text-sm text-gray-500 pb-4">
-            © 2025 J2Studio Design s.r.o. Všetky práva vyhradené.
+            © 2025 J2Studio s.r.o. Všetky práva vyhradené.
           </div>
         </div>
       </div>

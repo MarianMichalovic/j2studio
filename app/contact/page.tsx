@@ -147,6 +147,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-gray-900 mb-1">Telefón</h3>
                     <p className="text-gray-600">+421 903 140 332</p>
+                    <p className="text-gray-600">+421 948 890 885</p>
                   </div>
                 </div>
 
@@ -158,7 +159,7 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 text-gray-400 mt-1" />
                   <div>
                     <h3 className="font-medium text-gray-900 mb-1">E-mail</h3>
-                    <p className="text-gray-600">j2studiointerior@gmail.com</p>
+                    <p className="text-gray-600">info@j2studio.eu</p>
                   </div>
                 </div>
 
@@ -173,7 +174,7 @@ export default function ContactPage() {
                     <p className="text-gray-600">
                       Pondelok - Piatok: 9:00 - 18:00
                       <br />
-                      Sobota: 10:00 - 16:00
+                      Sobota: Zatvorené
                       <br />
                       Nedeľa: Zatvorené
                     </p>
