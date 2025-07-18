@@ -28,12 +28,11 @@ export default function Hero() {
         <div
           className={`px-6 lg:px-12 pt-12 lg:mt-20 flex flex-col justify-center transition-all duration-1000 ${heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <h1 className="text-3xl lg:text-7xl font-light text-gray-900 mb-1 lg:mb-4 leading-tight">
-            Návrh<span className="font-thin text-4xl lg:text-8xl text-orange-300">&</span>realizácie
-            <br />
-            Dizajnových interiérov na mieru
+          <h1 className="text-3xl lg:text-7xl font-light text-gray-900 mb-1 lg:mb-4">
+            Nábytkové
+            <br/><div className="mt-4">Štúdio</div>
           </h1>
-          <div className="w-32 lg:w-64 h-1 bg-orange-300 ml-4 lg:ml-40 mb-6" />
+          <div className="w-32 lg:w-64 h-1 bg-orange-300 ml-4 lg:ml-28 mb-6" />
           <p className="text-md text-gray-600 mb-12 leading-relaxed max-w-sm lg:max-w-md">
             Redefinujeme luxusné bývanie prostredníctvom bezkonkurenčného remeselného umenia a moderného dizajnu.
           </p>

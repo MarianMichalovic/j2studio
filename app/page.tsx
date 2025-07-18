@@ -14,12 +14,16 @@ import CTA from "@/components/sections/cta"
 import PartnerBanner from "@/components/sections/partner-banner"
 import VideoBanner from "@/components/sections/video-banner"
 import LogoBanner from "@/components/sections/logo-banner"
+import InteriorSlider from "@/components/sections/interior-slider"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <Hero />
+
+      {/* Interior Slider */}
+      <InteriorSlider />
 
       {/* Partner Banner */}
       <PartnerBanner />
@@ -30,14 +34,14 @@ export default function HomePage() {
       {/* Logo Banner */}
       <LogoBanner/>
 
-      {/* Services */}
-      <Services />
-
       {/* Statistics */}
       <Statistics />
 
       {/* Portfolio */}
       <Portfolio />
+
+      {/* Services */}
+      <Services />
 
       {/* CTA Section */}
       <CTA />
