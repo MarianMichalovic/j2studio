@@ -18,11 +18,11 @@ export default function CTA() {
               ctaInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <h2 className="text-5xl lg:text-6xl font-light text-gray-900 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 leading-tight">
               Máte záujem
               <span className="relative block mt-2">
                 o spoluprácu?
-                <div className="absolute -bottom-2 -right-8 w-full h-1 bg-orange-300"></div>
+                <span className="absolute -bottom-2 -right-8 w-full h-1 bg-orange-300"></span>
               </span>
             </h2>
           </div>
@@ -31,7 +31,7 @@ export default function CTA() {
               ctaInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <p className="text-lg text-gray-600 max-w-md">
+            <p className="text-lg text-neutral-600 max-w-md">
               Kontaktujte nás a dohodneme sa na osobnej konzultácii, kde vám predstavíme naše služby a možnosti spolupráce.
             </p>
           </div>

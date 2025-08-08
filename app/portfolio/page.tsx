@@ -83,7 +83,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h1
-              className={`text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-tight transition-all duration-1000 ${
+              className={`text-6xl lg:text-7xl font-light text-neutral-900 mb-8 leading-tight transition-all duration-1000 ${
                 heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
@@ -94,7 +94,7 @@ export default function PortfolioPage() {
               </span>
             </h1>
             <p
-              className={`text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
+              className={`text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
                 heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
@@ -150,17 +150,17 @@ export default function PortfolioPage() {
       {/* CTA Section */}
       <section
         ref={ctaRef}
-        className={`px-6 py-24 bg-gray-50 transition-all duration-1000 ${
+        className={`px-6 py-24 bg-neutral-50 transition-all duration-1000 ${
           ctaInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-8">Pripravení začať váš projekt?</h2>
-          <p className="text-xl text-gray-600 mb-12">
+          <h2 className="text-4xl lg:text-5xl font-light text-neutral-900 mb-8">Pripravení začať váš projekt?</h2>
+          <p className="text-xl text-neutral-600 mb-12">
             Poďme prediskutovať, ako môžeme oživiť vašu víziu s našimi odbornými znalosťami a inováciami.
           </p>
           <Link href={"/contact"}>
-          <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-none">
+          <Button className="bg-black hover:bg-neutral-800 text-white px-8 py-3 rounded-none">
             Kontaktujte nás
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>

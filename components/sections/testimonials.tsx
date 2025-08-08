@@ -41,7 +41,7 @@ export default function Testimonials() {
 
   return (
     <section
-      className="px-2 lg:px-6 py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100"
+      className="px-2 lg:px-6 py-24 bg-gradient-to-br from-neutral-50 via-white to-neutral-100"
       ref={testimonialsRef}
     >
       <div className="max-w-4xl mx-auto">
@@ -51,19 +51,19 @@ export default function Testimonials() {
             testimonialsInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-3xl lg:text-5xl font-light text-gray-900">
+          <h2 className="text-3xl lg:text-5xl font-bold text-neutral-900">
             Príbehy klientov
           </h2>
           <div className="flex items-center space-x-2">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-orange-300 transition-colors"
+              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-neutral-400 hover:text-neutral-900 hover:border-orange-300 transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-orange-300 transition-colors"
+              className="w-12 h-12 lg:w-16 w-12 h-12 lg:h-16 border-2 flex items-center justify-center text-neutral-400 hover:text-neutral-900 hover:border-orange-300 transition-colors"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -89,15 +89,15 @@ export default function Testimonials() {
                   >
                     <div className="flex justify-start mb-4">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-gray-900 text-gray-900 mr-1" />
+                        <Star key={i} className="w-4 h-4 fill-neutral-900 text-neutral-900 mr-1" />
                       ))}
                     </div>
-                    <p className="text-gray-600 mb-6 italic text-lg leading-relaxed">
+                    <p className="text-neutral-600 mb-6 italic text-lg leading-relaxed">
                       "{testimonial.text}"
                     </p>
                     <div>
-                      <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                      <div className="text-sm text-gray-500">{testimonial.role}</div>
+                      <div className="font-semibold text-neutral-900">{testimonial.name}</div>
+                      <div className="text-sm text-neutral-500">{testimonial.role}</div>
                     </div>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export default function Testimonials() {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? "bg-gray-900 w-8" : "bg-gray-300"
+                  currentSlide === index ? "bg-neutral-900 w-8" : "bg-neutral-300"
                 }`}
               />
             ))}

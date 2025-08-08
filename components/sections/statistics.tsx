@@ -45,7 +45,7 @@ export default function Statistics() {
   }, [statsInView, hasAnimated])
 
   return (
-    <section className="px-6 py-24 bg-gray-50" ref={statsRef}>
+    <section className="px-6 py-24 bg-neutral-50" ref={statsRef}>
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
@@ -55,16 +55,16 @@ export default function Statistics() {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="flex justify-center mb-4">
-                <stat.icon className="w-8 h-8 text-gray-700" />
+                <stat.icon className="w-8 h-8 text-orange-500" />
               </div>
-              <div className="relative inline-block text-3xl font-light text-gray-900 mb-2">
+              <div className="relative inline-block text-4xl font-bold text-neutral-900 mb-2">
                 <span className="relative z-10">
                   {animatedNumbers[index].toLocaleString()}
                   {stat.number > 999 && animatedNumbers[index] === stat.number && "+"}
                 </span>
                 <span className="absolute -bottom-1 left-0 w-0 h-1 bg-orange-400 transition-all duration-500 group-hover:w-full z-0"></span>
               </div>
-              <div className="text-sm text-gray-500">{stat.label}</div>
+              <div className="text-sm text-neutral-500">{stat.label}</div>
             </div>
           ))}
         </div>

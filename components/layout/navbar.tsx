@@ -27,7 +27,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full h-32 bg-white border-b border-gray-200 z-[9999]">
+    <div className="fixed top-0 left-0 w-full h-32 bg-white border-b border-neutral-200 z-[9999]">
       <div className="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
         <Link
           href="/"
@@ -47,7 +47,7 @@ export default function Navbar() {
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className={`text-sm transition-colors relative group ${pathname === item.href ? "text-black font-medium" : "text-gray-500 hover:text-gray-900"
+              className={`text-sm font-bold transition-colors relative group ${pathname === item.href ? "text-black font-bold" : "text-neutral-500 hover:text-neutral-900"
                 }`}
             >
               {item.label}
@@ -58,7 +58,7 @@ export default function Navbar() {
             </button>
           ))}
 
-          <Button asChild className="bg-black hover:bg-gray-800 text-white px-6 py-2 rounded-none text-sm">
+          <Button asChild className="bg-black hover:bg-neutral-800 text-white px-6 py-2 rounded-none text-sm">
             <Link href="/contact" onClick={() => handleNavClick("/contact")}>
               Kontaktujte ma
             </Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-  className={`md:hidden absolute top-20 left-0 w-full bg-white border-t border-gray-200 px-6 overflow-hidden transition-all duration-300 ease-in-out z-[9999] ${
+  className={`md:hidden absolute top-20 left-0 w-full bg-white border-t border-neutral-200 px-6 overflow-hidden transition-all duration-300 ease-in-out z-[9999] ${
     mobileOpen ? "max-h-[500px] py-4" : "max-h-0 py-0"
   }`}
 >
@@ -86,10 +86,10 @@ export default function Navbar() {
       <button
         key={item.href}
         onClick={() => handleNavClick(item.href)}
-        className={`text-base transition-colors relative group text-left ${
+        className={`text-base font-bold transition-colors relative group text-left ${
           pathname === item.href
-            ? "text-black font-medium"
-            : "text-gray-500 hover:text-gray-900"
+            ? "text-black font-bold"
+            : "text-neutral-500 hover:text-neutral-900"
         }`}
       >
         {item.label}
@@ -103,7 +103,7 @@ export default function Navbar() {
 
     <Button
       asChild
-      className="bg-black hover:bg-gray-800 text-white px-6 py-2 rounded-none text-sm w-full text-left"
+      className="bg-black hover:bg-neutral-800 text-white px-6 py-2 rounded-none text-sm w-full text-left"
     >
       <Link href="/contact" onClick={() => handleNavClick("/contact")}>
         Kontaktujte ma

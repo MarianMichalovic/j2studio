@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function PartnerBanner() {
   return (
-    <section className="w-full bg-gray-900 py-12 px-2 sm:py-16 sm:px-4 flex flex-col items-center justify-center">
+    <section className="w-full bg-neutral-900 py-12 px-2 sm:py-16 sm:px-4 flex flex-col items-center justify-center">
       <div className="flex flex-col items-center gap-6 sm:gap-8 w-full max-w-2xl">
         <Image
           src="/anywebp/kramar.png"
           alt="Partner Logo"
           width={180}
           height={180}
-          className="border-2 sm:border-4 border-gray-800 p-2 sm:p-4 shadow-none w-32  sm:w-64 object-contain"
+          className="p-2 sm:p-4 shadow-none w-32  sm:w-64 object-contain"
           priority
         />
         <h2 className="text-2xl xs:text-Exl sm:text-3xl md:text-4xl font-extrabold text-white text-center leading-tight">

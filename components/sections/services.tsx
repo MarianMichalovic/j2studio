@@ -27,13 +27,13 @@ export default function Services() {
   ]
 
   return (
-    <section className="px-6 py-24 bg-gray-50" ref={servicesRef}>
+    <section className="px-6 py-24 bg-neutral-50" ref={servicesRef}>
       <div className="max-w-6xl mx-auto">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${servicesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-4">Naše služby</h2>
-          <p className="text-gray-600">Komplexné riešenia pre vaše potreby</p>
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">Naše služby</h2>
+          <p className="text-neutral-600">Komplexné riešenia pre vaše potreby</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -43,11 +43,11 @@ export default function Services() {
               className={`text-center transition-all duration-1000 relative group ${servicesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="absolute inset-0 border-2 border-gray-300 transition-all duration-300 group-hover:border-gray-400 opacity-0 group-hover:opacity-100" />
+              <div className="absolute inset-0 border-2 border-neutral-300 transition-all duration-300 group-hover:border-neutral-400 opacity-0 group-hover:opacity-100" />
               <div className="relative p-6 flex flex-col items-center">
-                <item.icon className="w-10 h-10 mb-4 text-orange-500 transition-colors duration-300 group-hover:text-gray-900" />
-                <h3 className="text-lg font-medium text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+                <item.icon className="w-10 h-10 mb-4 text-orange-500 transition-colors duration-300 group-hover:text-neutral-900" strokeWidth={1.25} />
+                <h3 className="text-lg font-medium text-neutral-900 mb-2">{item.title}</h3>
+                <p className="text-neutral-600 text-sm">{item.desc}</p>
               </div>
             </div>
           ))}

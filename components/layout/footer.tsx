@@ -16,7 +16,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="px-6 py-12 border-t border-gray-100 relative">
+    <footer className="px-6 py-12 border-t border-neutral-100 relative">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col space-y-8">
           {/* Main footer content */}
@@ -32,15 +32,15 @@ export default function Footer() {
 
               {/* Contact Info */}
               <div className="space-y-2">
-                <div className="flex items-center space-x-2 text-sm text-gray-600">
+                <div className="flex items-center space-x-2 text-sm text-neutral-600">
                   <Mail className="w-4 h-4" />
                   <span>info@j2studio.eu</span>
                 </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-600">
+                <div className="flex items-center space-x-2 text-sm text-neutral-600">
                   <Phone className="w-4 h-4" />
                   <span>+421 903 140 332</span>
                 </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-600">
+                <div className="flex items-center space-x-2 text-sm text-neutral-600">
                   <Phone className="w-4 h-4" />
                   <span>+421 948 890 885</span>
                 </div>
@@ -60,7 +60,7 @@ export default function Footer() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-sm text-gray-500 hover:text-gray-900 transition-colors relative group text-left"
+                    className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors relative group text-left"
                   >
                     {item.label}
                     <div className="absolute -bottom-1 left-0 h-0.5 bg-black transition-all duration-300 w-0 group-hover:w-full"></div>
@@ -70,10 +70,10 @@ export default function Footer() {
 
               {/* Legal Links Column */}
               <div className="flex flex-col space-y-4">
-                <Link href="/privacy" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                <Link href="/privacy" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">
                   Ochrana súkromia
                 </Link>
-                <Link href="/terms" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                <Link href="/terms" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">
                   Podmienky
                 </Link>
               </div>
@@ -81,12 +81,12 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="pt-8 border-t border-gray-100 text-center text-sm text-gray-500 pb-4">
+          <div className="pt-8 border-t border-neutral-100 text-center text-sm text-neutral-500 pb-4">
             © 2025 J2Studio s.r.o. Všetky práva vyhradené.
           </div>
         </div>
       </div>
-      <div className="absolute w-full flex items-center justify-center bottom-0 left-0 h-12 bg-gray-900">
+      <div className="absolute w-full flex items-center justify-center bottom-0 left-0 h-12 bg-neutral-900">
         <a href="https://spacesolutions.sk/" target="_blank">
         <img src="space.png" alt="space logo" className="w-40 lg:w-56"/></a>
       </div>

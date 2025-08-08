@@ -11,8 +11,8 @@ export default function Team() {
       <div
         className={`text-center mb-16 px-6 transition-all duration-1000 ${teamInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-4">Náš tím</h2>
-        <p className="text-gray-600">Spoznajte expertov za každým projektom</p>
+        <h2 className="text-4xl lg:text-5xl font-light text-neutral-900 mb-4">Náš tím</h2>
+        <p className="text-neutral-600">Spoznajte expertov za každým projektom</p>
       </div>
 
       <div className="grid md:grid-cols-3">

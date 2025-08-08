@@ -8,21 +8,21 @@ export default function Locations() {
   const [locationRef, locationInView] = useInView()
 
   return (
-    <section className="pt-24" ref={locationRef}>
+    <section ref={locationRef}>
       <div className="grid lg:grid-cols-2">
         <div
-          className={`px-6 lg:px-12 flex flex-col justify-center transition-all duration-1000 ${locationInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          className={`px-12 lg:px-28 flex flex-col justify-center transition-all duration-1000 ${locationInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-8">Globálna prítomnosť</h2>
-          <p className="text-gray-600 mb-8 leading-relaxed">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-8">Globálna prítomnosť</h2>
+          <p className="text-neutral-600 mb-8 leading-relaxed">
             Dizajnový nábytok a vybavenie tvoríme a odovzdávame po celom slovensku a okolitých krajinách.
           </p>
 
           <div className="space-y-4 mb-10 lg:mb-0">
             {["Slovensko", "Česko", "Rakúsko", "Maďarsko"].map((city, index) => (
               <div key={city} className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-gray-400" />
-                <span className="text-gray-700">{city}</span>
+                <MapPin className="w-4 h-4 text-orange-500" />
+                <span className="text-neutral-700">{city}</span>
               </div>
             ))}
           </div>

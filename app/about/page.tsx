@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h1
-              className={`text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-tight transition-all duration-1000 ${
+              className={`text-6xl lg:text-7xl font-light text-neutral-900 mb-8 leading-tight transition-all duration-1000 ${
                 heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
@@ -35,7 +35,7 @@ export default function AboutPage() {
               </span>
             </h1>
             <p
-              className={`text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
+              className={`text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
                 heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
@@ -53,11 +53,11 @@ export default function AboutPage() {
               storyInView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
-            <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-8">Náš príbeh</h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <h2 className="text-4xl lg:text-5xl font-light text-neutral-900 mb-8">Náš príbeh</h2>
+            <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
             Už niekoľko rokov pomáhame klientom premeniť ich predstavy o ideálnom bývaní na skutočnosť – od prvotného návrhu až po montáž hotového nábytku priamo u vás doma.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed pb-12 lg:pb-0">
+            <p className="text-lg text-neutral-600 leading-relaxed pb-12 lg:pb-0">
             Naše projekty realizujeme po celom Slovensku, bez ohľadu na lokalitu. Či už ide o moderný byt v meste, útulný rodinný dom na vidieku alebo firemné priestory, vždy prinášame riešenia šité na mieru priestoru aj životnému štýlu.
             </p>
           </div>
@@ -80,18 +80,18 @@ export default function AboutPage() {
       <CTA />
 
       {/* Values Section */}
-      <section className="px-6 py-24 bg-gray-50" ref={valuesRef}>
+      <section className="px-6 py-24 bg-neutral-50" ref={valuesRef}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2
-              className={`text-4xl lg:text-5xl font-light text-gray-900 mb-4 transition-all duration-1000 ${
+              className={`text-4xl lg:text-5xl font-light text-neutral-900 mb-4 transition-all duration-1000 ${
                 valuesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
               Naše hodnoty
             </h2>
             <p
-              className={`text-gray-600 max-w-2xl mx-auto transition-all duration-1000 delay-200 ${
+              className={`text-neutral-600 max-w-2xl mx-auto transition-all duration-1000 delay-200 ${
                 valuesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
@@ -132,8 +132,8 @@ export default function AboutPage() {
                 <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300 group-hover:bg-orange-300">
                   <value.icon className="w-8 h-8 text-white group-hover:text-black transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-4">{value.title}</h3>
-                <p className="text-gray-600">{value.desc}</p>
+                <h3 className="text-xl font-medium text-neutral-900 mb-4">{value.title}</h3>
+                <p className="text-neutral-600">{value.desc}</p>
               </div>
             ))}
           </div>

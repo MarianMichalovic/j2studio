@@ -67,12 +67,12 @@ export default function Portfolio() {
   ]
 
   return (
-    <section className="py-24" ref={portfolioRef}>
+    <section className="pt-24" ref={portfolioRef}>
       <div
         className={`text-center mb-16 px-6 transition-all duration-1000 ${portfolioInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-4">Vybrané projekty</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">Vybrané projekty</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">
           Objavte naše najnovšie architektonické úspechy a dizajnové inovácie.
         </p>
       </div>
@@ -98,7 +98,7 @@ export default function Portfolio() {
 
               {/* Click indicator text */}
               <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
+                <div className="px-3 py-1 bg-orange-500 backdrop-blur-sm rounded-full">
                   <span className="text-white text-xs font-medium">kliknite</span>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function Portfolio() {
                 className={`absolute inset-0 bg-black/80 p-6 text-white transition-all duration-500 flex flex-col justify-center ${selectedProject === project.id ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full pointer-events-none"}`}
               >
                 <button
-                  className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+                  className="absolute top-4 right-4 text-white hover:text-neutral-300 transition-colors"
                   onClick={(e) => {
                     e.stopPropagation()
                     setSelectedProject(null)
