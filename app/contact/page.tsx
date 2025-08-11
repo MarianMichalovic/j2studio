@@ -74,7 +74,7 @@ export default function ContactPage() {
 
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-6 h-6 text-neutral-400 mt-1" />
+                  <MapPin className="w-6 h-6 mt-1" />
                   <div>
                     <h3 className="font-medium text-neutral-900 mb-1">Umiestnenie kancelárie</h3>
                     <p className="text-neutral-600">
@@ -88,16 +88,16 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <Phone className="w-6 h-6 text-neutral-400 mt-1" />
+                  <Phone className="w-6 h-6 mt-1" />
                   <div>
-                    <h3 className="font-medium text-neutral-900 mb-1">Telefón</h3>
+                    <h3 className="font-medium mb-1">Telefón</h3>
                     <p className="text-neutral-600">+421 903 140 332</p>
                     <p className="text-neutral-600">+421 948 890 885</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <Mail className="w-6 h-6 text-neutral-400 mt-1" />
+                  <Mail className="w-6 h-6 mt-1" />
                   <div>
                     <h3 className="font-medium text-neutral-900 mb-1">E-mail</h3>
                     <p className="text-neutral-600">info@j2studio.eu</p>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <Clock className="w-6 h-6 text-neutral-400 mt-1" />
+                  <Clock className="w-6 h-6 mt-1" />
                   <div>
                     <h3 className="font-medium text-neutral-900 mb-1">Pracovné hodiny</h3>
                     <p className="text-neutral-600">
