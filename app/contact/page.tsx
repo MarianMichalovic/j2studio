@@ -4,38 +4,19 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
-import { useRef } from "react"
-import { useInView } from "@/hooks/use-in-view"
 
 export default function ContactPage() {
-  const heroRef = useRef<HTMLDivElement>(null)
-  const formRef = useRef<HTMLDivElement>(null)
-  const infoRef = useRef<HTMLDivElement>(null)
-  const mapRef = useRef<HTMLDivElement>(null)
-
-  const heroInView = useInView(heroRef)
-  const formInView = useInView(formRef)
-  const infoInView = useInView(infoRef)
-  const mapInView = useInView(mapRef)
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-24" ref={heroRef}>
+      <section className="pt-32 pb-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h1
-              className={`text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight transition-all duration-1000 ${
-                heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
+            <h1 className="text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight">
               Kontaktujte nás
             </h1>
-            <p
-              className={`text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
-                heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               Pripravení začať váš ďalší projekt? Spojte sa s naším tímom a prediskutujte vašu víziu a ako ju môžeme
               oživiť.
             </p>
@@ -48,20 +29,12 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div ref={formRef}>
-              <h2
-                className={`text-3xl font-bold text-neutral-900 mb-8 transition-all duration-1000 ${
-                  formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-              >
+            <div>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-8">
                 Pošlite nám správu
               </h2>
               <form className="space-y-6">
-                <div
-                  className={`grid md:grid-cols-2 gap-6 transition-all duration-1000 delay-100 ${
-                    formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-neutral-700 mb-2">Meno</label>
                     <Input className="rounded-none border-neutral-300 focus:border-black" />
@@ -71,27 +44,15 @@ export default function ContactPage() {
                     <Input className="rounded-none border-neutral-300 focus:border-black" />
                   </div>
                 </div>
-                <div
-                  className={`transition-all duration-1000 delay-200 ${
-                    formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div>
                   <label className="block text-sm font-medium text-neutral-700 mb-2">E-mail</label>
                   <Input type="email" className="rounded-none border-neutral-300 focus:border-black" />
                 </div>
-                <div
-                  className={`transition-all duration-1000 delay-300 ${
-                    formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div>
                   <label className="block text-sm font-medium text-neutral-700 mb-2">Telefón</label>
                   <Input type="tel" className="rounded-none border-neutral-300 focus:border-black" />
                 </div>
-                <div
-                  className={`transition-all duration-1000 delay-500 ${
-                    formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div>
                   <label className="block text-sm font-medium text-neutral-700 mb-2">Správa</label>
                   <Textarea
                     rows={6}
@@ -99,32 +60,20 @@ export default function ContactPage() {
                     placeholder="Povedzte nám o vašom projekte..."
                   />
                 </div>
-                <Button
-                  className={`bg-black hover:bg-neutral-800 text-white px-8 py-3 rounded-none w-full transition-all duration-1000 delay-600 ${
-                    formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <Button className="bg-black hover:bg-neutral-800 text-white px-8 py-3 rounded-none w-full">
                   Odoslať správu
                 </Button>
               </form>
             </div>
 
             {/* Contact Information */}
-            <div ref={infoRef}>
-              <h2
-                className={`text-3xl font-bold text-neutral-900 mb-8 transition-all duration-1000 ${
-                  infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-              >
+            <div>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-8">
                 Spojte sa s nami
               </h2>
 
               <div className="space-y-8">
-                <div
-                  className={`flex items-start space-x-4 transition-all duration-1000 delay-100 ${
-                    infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div className="flex items-start space-x-4">
                   <MapPin className="w-6 h-6 text-neutral-400 mt-1" />
                   <div>
                     <h3 className="font-medium text-neutral-900 mb-1">Umiestnenie kancelárie</h3>
@@ -138,11 +87,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div
-                  className={`flex items-start space-x-4 transition-all duration-1000 delay-200 ${
-                    infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div className="flex items-start space-x-4">
                   <Phone className="w-6 h-6 text-neutral-400 mt-1" />
                   <div>
                     <h3 className="font-medium text-neutral-900 mb-1">Telefón</h3>
@@ -151,11 +96,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div
-                  className={`flex items-start space-x-4 transition-all duration-1000 delay-300 ${
-                    infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div className="flex items-start space-x-4">
                   <Mail className="w-6 h-6 text-neutral-400 mt-1" />
                   <div>
                     <h3 className="font-medium text-neutral-900 mb-1">E-mail</h3>
@@ -163,11 +104,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div
-                  className={`flex items-start space-x-4 transition-all duration-1000 delay-400 ${
-                    infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                <div className="flex items-start space-x-4">
                   <Clock className="w-6 h-6 text-neutral-400 mt-1" />
                   <div>
                     <h3 className="font-medium text-neutral-900 mb-1">Pracovné hodiny</h3>

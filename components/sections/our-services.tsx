@@ -30,7 +30,7 @@ const services = [
 export default function OurServices() {
   return (
     <section 
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center"
+      className="relative py-28 bg-cover bg-center bg-no-repeat flex items-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('/bg-2.jpg')`
       }}
