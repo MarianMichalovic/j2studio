@@ -15,7 +15,7 @@ export default function Navbar() {
     { href: "/", label: "Domov" },
     // { href: "/about", label: "O nás" },
     { href: "/sluzby", label: "Služby" },
-    { href: "/process", label: "Proces" },
+    { href: "/proces", label: "Proces" },
     { href: "/contact", label: "Kontakt" },
   ]
 

@@ -75,11 +75,9 @@ export default function HowWeWork() {
 
         {/* Proces sekcia */}
         <div className="flex justify-center">
-          <div className="bg-gray-100 px-8 py-4 rounded-lg">
-            <h3 className="text-xl font-semibold text-neutral-900">
+            <a href="/proces" className="text-xl font-semibold text-neutral-900 bg-gray-100 px-8 py-4 rounded-lg">
               Proces
-            </h3>
-          </div>
+            </a>
         </div>
       </div>
     </section>
