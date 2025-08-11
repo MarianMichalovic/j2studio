@@ -15,6 +15,7 @@ import PartnerBanner from "@/components/sections/partner-banner"
 import VideoBanner from "@/components/sections/video-banner"
 import LogoBanner from "@/components/sections/logo-banner"
 import InteriorSlider from "@/components/sections/interior-slider"
+import HowWeWork from "@/components/sections/how-we-work"
 
 export default function HomePage() {
   return (
@@ -25,41 +26,44 @@ export default function HomePage() {
       {/* Interior Slider */}
       <InteriorSlider />
 
+      {/* How We Work Section */}
+      <HowWeWork />
+
       {/* Partner Banner */}
-      <PartnerBanner />
+      {/* <PartnerBanner /> */}
       
       {/* Video Banner */}
-      <VideoBanner />
+      {/* <VideoBanner /> */}
 
       {/* Logo Banner */}
-      <LogoBanner/>
+      {/* <LogoBanner/> */}
 
       {/* Statistics */}
-      <Statistics />
+      {/* <Statistics /> */}
 
       {/* Portfolio */}
-      <Portfolio />
+      {/* <Portfolio /> */}
 
       {/* Services */}
-      <Services />
+      {/* <Services /> */}
 
       {/* CTA Section */}
-      <CTA />
+      {/* <CTA /> */}
 
       {/* Full Width Image Break */}
-      <ImageBreak />
+      {/* <ImageBreak /> */}
 
       {/* Testimonials */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* Process */}
-      <Process />
+      {/* <Process /> */}
 
       {/* Locations */}
-      <Locations />
+      {/* <Locations /> */}
 
       {/* Newsletter */}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </div>
   )
 }

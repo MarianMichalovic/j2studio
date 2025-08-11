@@ -1,26 +1,15 @@
 "use client"
 
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useInView } from "@/hooks/use-in-view"
-import { useState, useEffect } from "react"
 
 import { motion } from "framer-motion";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
-  const [heroRef, heroInView] = useInView()
-
-  const [currentSlide, setCurrentSlide] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % 3)
-    }, 4000) // Change slide every 4 seconds
-
-    return () => clearInterval(interval)
-  }, [])
+  const result = useInView()
+  const [heroRef, heroInView] = Array.isArray(result) ? result : [null, result]
 
   return (
     <section ref={heroRef} className="min-h-screen">
@@ -54,37 +43,20 @@ export default function Hero() {
       <div
         className={`relative h-full transition-all duration-1000 delay-300 overflow-hidden ${heroInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
       >
-        {/* Slideshow Images */}
-        {[
-        "/anywebp/kuch2.webp",
-        "/anywebp/telka2.webp",
-        "/anywebp/skrina2.webp",
-        ].map((src, index) => (
-        <Image
-          key={index}
-          src={src || "/placeholder.svg"}
-          alt={`Moderná architektúra ${index + 1}`}
-          fill
-          className={`object-cover transition-all duration-1000 ${currentSlide === index
-            ? "opacity-100 translate-x-0"
-            : index < currentSlide
-            ? "opacity-0 -translate-x-full"
-            : "opacity-0 translate-x-full"
-          } hover:scale-105`}
-        />
-        ))}
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {[0, 1, 2].map((index) => (
-          <button
-          key={index}
-          onClick={() => setCurrentSlide(index)}
-          className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-neutral-800 w-8" : "bg-neutral-700/50"
-            }`}
-          />
-        ))}
-        </div>
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video/v1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
+        {/* Optional overlay for better text readability if needed */}
+        <div className="absolute inset-0 bg-black/10" />
       </div>
       </div>
     </section>
