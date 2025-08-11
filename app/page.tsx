@@ -16,6 +16,7 @@ import VideoBanner from "@/components/sections/video-banner"
 import LogoBanner from "@/components/sections/logo-banner"
 import InteriorSlider from "@/components/sections/interior-slider"
 import HowWeWork from "@/components/sections/how-we-work"
+import OurServices from "@/components/sections/our-services"
 
 export default function HomePage() {
   return (
@@ -28,6 +29,9 @@ export default function HomePage() {
 
       {/* How We Work Section */}
       <HowWeWork />
+
+      {/* Our Services Section */}
+      <OurServices />
 
       {/* Partner Banner */}
       {/* <PartnerBanner /> */}
