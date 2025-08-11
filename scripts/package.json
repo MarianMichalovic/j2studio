@@ -1,0 +1,16 @@
+{
+  "name": "image-optimizer",
+  "version": "1.0.0",
+  "description": "Optimalizácia obrázkov pre J2Studio",
+  "scripts": {
+    "optimize": "node optimize-images.js",
+    "optimize:webp": "node optimize-images.js --format webp",
+    "optimize:jpeg": "node optimize-images.js --format jpeg"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7"
+  },
+  "type": "module"
+}

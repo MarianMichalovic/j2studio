@@ -2,6 +2,7 @@
 
 import React from "react"
 import Image from "next/image"
+import Gallery from "@/components/ui/gallery"
 import type { Metadata } from "next"
 
 // export const metadata: Metadata = {
@@ -33,13 +34,68 @@ const services = [
   }
 ]
 
-const galleryImages = [
-  "/anywebp/kuch1.webp",
-  "/anywebp/skrina1.webp",
-  "/anywebp/telka2.webp",
-  "/anywebp/kuch2.webp",
-  "/anywebp/skrina3.webp",
-  "/anywebp/kup1.webp"
+// Galérie obrázkov
+const kuchyneImages = [
+  "/img/kuchyna/1000002089.webp",
+  "/img/kuchyna/1000002090.webp", 
+  "/img/kuchyna/1000002091.webp",
+  "/img/kuchyna/1000002092.webp",
+  "/img/kuchyna/1000002094.webp",
+  "/img/kuchyna/1000002095.webp",
+  "/img/kuchyna/1000002556.webp",
+  "/img/kuchyna/1000002557.webp",
+  "/img/kuchyna/1000002968.webp",
+  "/img/kuchyna/1000002969.webp",
+  "/img/kuchyna/1000002970.webp",
+  "/img/kuchyna/1000002971.webp",
+  "/img/kuchyna/1000002972.webp",
+  "/img/kuchyna/1000003941.webp",
+  "/img/kuchyna/1000003942.webp",
+  "/img/kuchyna/1000003944.webp",
+  "/img/kuchyna/1000003945.webp",
+  "/img/kuchyna/1000003947.webp",
+  "/img/kuchyna/1000004944.webp",
+  "/img/kuchyna/IMG_3477.webp",
+  "/img/kuchyna/IMG_3478.webp",
+  "/img/kuchyna/IMG_3479.webp",
+  "/img/kuchyna/IMG_3480.webp",
+  "/img/kuchyna/IMG_4039.webp",
+  "/img/kuchyna/IMG_4040.webp",
+  "/img/kuchyna/IMG_4041.webp",
+  "/img/kuchyna/IMG_4178.webp",
+  "/img/kuchyna/IMG_4181.webp",
+  "/img/kuchyna/IMG_4199.webp"
+]
+
+const montazeImages = [
+  "/img/montaze/1000003773.webp",
+  "/img/montaze/1000003775.webp",
+  "/img/montaze/1000007119.webp",
+  "/img/montaze/1000007246.webp",
+  "/img/montaze/1000008316.webp",
+  "/img/montaze/20250509_070848.webp",
+  "/img/montaze/20250509_143519.webp",
+  "/img/montaze/20250509_143533.webp",
+  "/img/montaze/20250610_074218.webp",
+  "/img/montaze/IMG_2537.webp",
+  "/img/montaze/IMG_2625.webp",
+  "/img/montaze/IMG_2732.webp",
+  "/img/montaze/IMG_2736.webp",
+  "/img/montaze/IMG_2768.webp",
+  "/img/montaze/IMG_2769.webp",
+  "/img/montaze/IMG_2770.webp",
+  "/img/montaze/IMG_2771.webp",
+  "/img/montaze/IMG_2777.webp",
+  "/img/montaze/IMG_2796.webp",
+  "/img/montaze/IMG_2811.webp",
+  "/img/montaze/IMG_3340.webp",
+  "/img/montaze/IMG_3835.webp",
+  "/img/montaze/IMG_3936.webp",
+  "/img/montaze/IMG_3978.webp",
+  "/img/montaze/IMG_4070.webp",
+  "/img/montaze/IMG_4071.webp",
+  "/img/montaze/IMG_4073.webp",
+  "/img/montaze/IMG_4169.webp"
 ]
 
 export default function ServicesPage() {
@@ -114,7 +170,7 @@ export default function ServicesPage() {
         </div>
       </section> */}
 
-      {/* Galéria */}
+      {/* Galérie */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -126,19 +182,19 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {galleryImages.map((image, index) => (
-              <div key={index} className="relative h-[250px] overflow-hidden rounded-lg group cursor-pointer">
-                <Image
-                  src={image}
-                  alt={`Realizácia ${index + 1}`}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            ))}
-          </div>
+          {/* Galéria kuchýň */}
+          <Gallery 
+            title="Kuchyne na mieru"
+            images={kuchyneImages}
+            alt="Kuchyňa na mieru"
+          />
+
+          {/* Galéria montáží */}
+          <Gallery 
+            title="Montáže nábytku"
+            images={montazeImages}
+            alt="Montáž nábytku"
+          />
         </div>
       </section>
 

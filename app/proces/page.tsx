@@ -8,12 +8,7 @@ const processSteps = [
     title: "Stretnutie",
     description: "Na základe vášho dopytu si dohodneme stretnutie u nás v štúdiu, na ktorom sa bližšie oboznámime s vašimi predstavami o nábytku. Oceníme ak si na naše stretnutie prinesiete niekoľko obrázkov, ktoré vystihujú vaše predstavy a štýl. Prineste si aj so sebou výpis merní formátu, ktorý vám zašleme na email. Takto celý proces urýchlime.",
     icon: (
-      <svg className="w-16 h-16" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M25 30C25 25 29 21 34 21H66C71 21 75 25 75 30V50C75 55 71 59 66 59H45L35 69V59H34C29 59 25 55 25 50V30Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="45" cy="40" r="2" fill="currentColor"/>
-        <circle cx="55" cy="40" r="2" fill="currentColor"/>
-        <circle cx="50" cy="48" r="2" fill="currentColor"/>
-      </svg>
+      <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"/></svg>
     )
   },
   {
@@ -21,12 +16,7 @@ const processSteps = [
     title: "Návrh",
     description: "Následne budeme intenzívne pracovať na návrhu a projektovej dokumentácii vášho nábytku. Obvykle vytvárame návrh už do 2 týždňov.",
     icon: (
-      <svg className="w-16 h-16" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="25" y="20" width="50" height="35" rx="3" stroke="currentColor" strokeWidth="3"/>
-        <path d="M35 30L45 40L65 25" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M50 65L50 75" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <path d="M40 75L60 75" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-      </svg>
+        <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 10 2 2 4-4"/><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M12 17v4"/><path d="M8 21h8"/></svg>
     )
   },
   {
@@ -34,14 +24,7 @@ const processSteps = [
     title: "Príprava výroby",
     description: "Na ďalšom stretnutí vám predstavíme hotový návrh a vizualizácie vášho nábytku, použité materiály a cenovú ponuku. V tomto kole korekcií budete mať priestor na pripomienky, môžete meniť farbenú a materiálovú riešenie. Nové doplnené zmeny zapracujeme do návrhu, ide o jeden variant, ktorý doplnime k vašej úplnej spokojnosti.",
     icon: (
-      <svg className="w-16 h-16" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="30" width="60" height="40" rx="5" stroke="currentColor" strokeWidth="3"/>
-        <path d="M30 40L70 40" stroke="currentColor" strokeWidth="2"/>
-        <path d="M30 50L70 50" stroke="currentColor" strokeWidth="2"/>
-        <path d="M30 60L50 60" stroke="currentColor" strokeWidth="2"/>
-        <circle cx="35" cy="45" r="2" fill="currentColor"/>
-        <circle cx="45" cy="55" r="2" fill="currentColor"/>
-      </svg>
+        <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15v-3.014"/><path d="M16 15v-3.014"/><path d="M20 6H4"/><path d="M20 8V4"/><path d="M4 8V4"/><path d="M8 15v-3.014"/><rect x="3" y="12" width="18" height="7" rx="1"/></svg>
     )
   },
   {
@@ -49,10 +32,7 @@ const processSteps = [
     title: "Dohoda",
     description: "Po finálnom schválení vizuálneho návrhu a cenovej ponuky podpisujeme zmluvu o dielo. Zaplatíte zálohu 50% z načítame pracovať na výrobe vášho vysnívaného nábytku. Termín dodania závisle od zložitosti diela, obvykle do 8 týždňov od podpísania zmluvy, v tejto etape si tiež dohodneme presný termín montáže.",
     icon: (
-      <svg className="w-16 h-16" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M35 45L45 55L65 35" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="50" cy="50" r="25" stroke="currentColor" strokeWidth="3"/>
-      </svg>
+        <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
     )
   },
   {
@@ -60,13 +40,7 @@ const processSteps = [
     title: "Montáž",
     description: "Týždeň pred montážou sa uhrádzá zvyšných 45% z ceny nábytku. Po montáži a podpísaní preberacieho protokolu vám vystavíme faktúru na posledných 5% z celkovej ceny.",
     icon: (
-      <svg className="w-16 h-16" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M25 45L35 35L45 45L35 55Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M55 25L75 45L65 55L45 35Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M30 65L40 75" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <path d="M40 65L30 75" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="70" cy="70" r="8" stroke="currentColor" strokeWidth="3"/>
-      </svg>
+        <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3 1 1 0 0 1 1-1z"/><path d="M13 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1l-.81 3.242a1 1 0 0 1-.97.758H8"/><path d="M14 4h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3"/><path d="M18 6h4"/><path d="m5 10-2 8"/><path d="m7 18 2-8"/></svg>
     )
   }
 ]
