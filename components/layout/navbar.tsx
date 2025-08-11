@@ -13,8 +13,9 @@ export default function Navbar() {
 
   const navItems = [
     { href: "/", label: "Domov" },
-    { href: "/about", label: "O nás" },
-    { href: "/portfolio", label: "Portfólio" },
+    // { href: "/about", label: "O nás" },
+    { href: "/process", label: "Proces" },
+    { href: "/projekty", label: "Projekty" },
     { href: "/contact", label: "Kontakt" },
   ]
 
