@@ -25,7 +25,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h1
-              className={`text-6xl lg:text-7xl font-light text-neutral-900 mb-8 leading-tight transition-all duration-1000 ${
+              className={`text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight transition-all duration-1000 ${
                 heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
@@ -50,7 +50,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div ref={formRef}>
               <h2
-                className={`text-3xl font-light text-neutral-900 mb-8 transition-all duration-1000 ${
+                className={`text-3xl font-bold text-neutral-900 mb-8 transition-all duration-1000 ${
                   formInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
@@ -112,7 +112,7 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div ref={infoRef}>
               <h2
-                className={`text-3xl font-light text-neutral-900 mb-8 transition-all duration-1000 ${
+                className={`text-3xl font-bold text-neutral-900 mb-8 transition-all duration-1000 ${
                   infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >

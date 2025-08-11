@@ -43,9 +43,9 @@ export default function Services() {
               className={`text-center transition-all duration-1000 relative group ${servicesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="absolute inset-0 border-2 border-neutral-300 transition-all duration-300 group-hover:border-neutral-400 opacity-0 group-hover:opacity-100" />
+              <div className="absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100" />
               <div className="relative p-6 flex flex-col items-center">
-                <item.icon className="w-10 h-10 mb-4 text-orange-500 transition-colors duration-300 group-hover:text-neutral-900" strokeWidth={1.25} />
+                <item.icon className="w-10 h-10 mb-4 text-orange-500 duration-300 group-hover:scale-110 transition-all" strokeWidth={1.25} />
                 <h3 className="text-lg font-medium text-neutral-900 mb-2">{item.title}</h3>
                 <p className="text-neutral-600 text-sm">{item.desc}</p>
               </div>

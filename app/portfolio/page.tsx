@@ -83,7 +83,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h1
-              className={`text-6xl lg:text-7xl font-light text-neutral-900 mb-8 leading-tight transition-all duration-1000 ${
+              className={`text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight transition-all duration-1000 ${
                 heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
@@ -155,7 +155,7 @@ export default function PortfolioPage() {
         }`}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-light text-neutral-900 mb-8">Pripravení začať váš projekt?</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-8">Pripravení začať váš projekt?</h2>
           <p className="text-xl text-neutral-600 mb-12">
             Poďme prediskutovať, ako môžeme oživiť vašu víziu s našimi odbornými znalosťami a inováciami.
           </p>

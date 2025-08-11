@@ -26,7 +26,7 @@ export default function Hero() {
     <section ref={heroRef} className="min-h-screen">
       <div className="grid lg:grid-cols-2 h-screen">
       <div
-        className={`px-6 lg:px-28 pt-8 lg:mt-12 flex flex-col justify-center transition-all duration-1000 ${heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`px-6 lg:px-28 pt-6 lg:mt-6 flex flex-col justify-center transition-all duration-1000 ${heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         <h1 className="text-3xl lg:text-7xl font-bold text-neutral-900 mb-1 lg:mb-4">
         Nábytkové
