@@ -36,6 +36,14 @@ const services = [
 
 // Galérie obrázkov
 const kuchyneImages = [
+  "/img/kuchyna/1000003946.webp",
+  "/img/kuchyna/1000003943.webp",
+  "/img/kuchyna/1000003941.webp",
+  "/img/kuchyna/1000003942.webp",
+  "/img/kuchyna/1000003944.webp",
+  "/img/kuchyna/1000003945.webp",
+  "/img/kuchyna/1000003947.webp",
+  "/img/kuchyna/1000004944.webp",
   "/img/kuchyna/1000002089.webp",
   "/img/kuchyna/1000002090.webp", 
   "/img/kuchyna/1000002091.webp",
@@ -49,12 +57,6 @@ const kuchyneImages = [
   "/img/kuchyna/1000002970.webp",
   "/img/kuchyna/1000002971.webp",
   "/img/kuchyna/1000002972.webp",
-  "/img/kuchyna/1000003941.webp",
-  "/img/kuchyna/1000003942.webp",
-  "/img/kuchyna/1000003944.webp",
-  "/img/kuchyna/1000003945.webp",
-  "/img/kuchyna/1000003947.webp",
-  "/img/kuchyna/1000004944.webp",
   "/img/kuchyna/IMG_3477.webp",
   "/img/kuchyna/IMG_3478.webp",
   "/img/kuchyna/IMG_3479.webp",
