@@ -89,7 +89,7 @@ const montazeImages = [
   "/img/montaze/IMG_2796.webp",
   "/img/montaze/IMG_2811.webp",
   "/img/montaze/IMG_3340.webp",
-  "/img/montaze/IMG_3835.webp",
+  // "/img/montaze/IMG_3835.webp",
   "/img/montaze/IMG_3936.webp",
   "/img/montaze/IMG_3978.webp",
   "/img/montaze/IMG_4070.webp",
