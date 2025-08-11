@@ -64,7 +64,7 @@ export default function OurServices() {
         {/* Tlačidlo */}
         <div className="flex justify-center">
           <a href="/sluzby"
-            className="bg-white text-black hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg"
+            className="bg-white text-black hover:bg-gray-100 px-8 py-4 font-semibold"
           >
             Zistiť viac
           </a>
