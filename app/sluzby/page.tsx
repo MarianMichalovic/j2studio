@@ -100,6 +100,16 @@ const montazeImages = [
   "/img/montaze/IMG_4169.webp"
 ]
 
+const vizualizacieImages = [
+  "/img/vizualizacie/17.webp",
+  "/img/vizualizacie/18.webp", 
+  "/img/vizualizacie/19.webp",
+  "/img/vizualizacie/20.webp",
+  "/img/vizualizacie/21.webp",
+  "/img/vizualizacie/22.webp",
+  "/img/vizualizacie/23.webp"
+]
+
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -196,6 +206,13 @@ export default function ServicesPage() {
             title="Montáže nábytku"
             images={montazeImages}
             alt="Montáž nábytku"
+          />
+
+          {/* Galéria vizualizácií */}
+          <Gallery 
+            title="Vizualizácie"
+            images={vizualizacieImages}
+            alt="Vizualizácia nábytku"
           />
         </div>
       </section>
