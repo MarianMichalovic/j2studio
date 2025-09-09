@@ -46,16 +46,18 @@ export default function OurServices() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="border-2 border-white/30 p-8 lg:p-12 hover:border-white/60 transition-all duration-300 group cursor-pointer"
+              className={`p-8 lg:p-12 hover:border-white/60 transition-all duration-300 group cursor-pointer ${
+              index < 2 ? 'lg:border-r-2 lg:border-white/30' : ''
+              }`}
             >
               <div className="flex justify-center mb-6 text-white group-hover:text-orange-300 transition-colors duration-300">
-                {service.icon}
+              {service.icon}
               </div>
               <h3 className="text-2xl lg:text-3xl font-semibold">
-                {service.title}
+              {service.title}
               </h3>
               <p className="text-2xl lg:text-3xl font-semibold opacity-90">
-                {service.subtitle}
+              {service.subtitle}
               </p>
             </div>
           ))}
