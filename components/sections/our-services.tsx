@@ -42,11 +42,11 @@ export default function OurServices() {
         </h2>
 
         {/* Služby grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 mb-12">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={`p-8 lg:p-12 hover:border-white/60 transition-all duration-300 group cursor-pointer ${
+              className={`p-10 lg:p-16 hover:border-white/60 transition-all duration-300 group cursor-pointer ${
               index < 2 ? 'lg:border-r-2 lg:border-white/30' : ''
               }`}
             >
