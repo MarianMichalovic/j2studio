@@ -13,6 +13,7 @@ export default function Navbar() {
 
   const navItems = [
     { href: "/", label: "Domov" },
+    { href: "/postele", label: "Postele" },
     // { href: "/about", label: "O nás" },
     { href: "/sluzby", label: "Služby" },
     { href: "/proces", label: "Proces" },
