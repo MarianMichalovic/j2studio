@@ -35,13 +35,13 @@ export default function Hero() {
             className={`max-w-2xl transition-all duration-1000 ${heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             <h1 className="text-4xl lg:text-7xl font-bold text-white mb-4 lg:mb-6">
-              Nábytkové
+              Interiérové
               <br/>
               <span className="block mt-2 lg:mt-4">štúdio</span>
             </h1>
             <div className="w-32 lg:w-64 h-1 bg-orange-300 ml-4 lg:ml-28 mb-6 lg:mb-8" />
             <p className="text-lg lg:text-xl text-white/90 mb-8 lg:mb-12 leading-relaxed max-w-lg">
-              Redefinujeme luxusné bývanie prostredníctvom bezkonkurenčného remeselného umenia a moderného dizajnu.
+              Redefinujeme luxusné bývanie prostredníctvom bezkonkurenčného remeselného umenia a moderného dizajnu. Vyrobené najmodernejšou technológiou na Slovensku
             </p>
             <Button className="bg-orange-300 hover:bg-white text-neutral-900 hover:text-neutral-900 px-8 py-6 rounded-none group w-fit font-semibold">
               Zobraziť referencie
