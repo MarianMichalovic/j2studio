@@ -232,6 +232,11 @@ const vstavaneSkrineImages = [
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
+      <style jsx global>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
       {/* Hero sekcia */}
       <section className="pt-32 pb-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
@@ -316,67 +321,94 @@ export default function ServicesPage() {
           </div>
 
           {/* Galéria kuchýň */}
-          <Gallery 
-            title="Kuchyne na mieru"
-            images={kuchyneImages}
-            alt="Kuchyňa na mieru"
-          />
+          <div className="relative">
+            <div id="kuchyne" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Kuchyne na mieru"
+              images={kuchyneImages}
+              alt="Kuchyňa na mieru"
+            />
+          </div>
 
           {/* Galéria obývačiek */}
-          <Gallery 
-            title="Obývačky"
-            images={obyvackaImages}
-            alt="Obývačka na mieru"
-          />
+          <div className="relative">
+            <div id="obyvacky" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Obývačky"
+              images={obyvackaImages}
+              alt="Obývačka na mieru"
+            />
+          </div>
 
           {/* Galéria spální */}
-          <Gallery 
-            title="Spálne"
-            images={spalnaImages}
-            alt="Spálňa na mieru"
-          />
+          <div className="relative">
+            <div id="spalne" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Spálne"
+              images={spalnaImages}
+              alt="Spálňa na mieru"
+            />
+          </div>
 
           {/* Galéria vstavných skríň */}
-          <Gallery 
-            title="Vstavané skrine a šatníky"
-            images={vstavaneSkrineImages}
-            alt="Vstavané skrine na mieru"
-          />
+          <div className="relative">
+            <div id="vstavane-skrine" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Vstavané skrine a šatníky"
+              images={vstavaneSkrineImages}
+              alt="Vstavané skrine na mieru"
+            />
+          </div>
 
           {/* Galéria detských izieb */}
-          <Gallery 
-            title="Detské izby"
-            images={detskaiIzbaImages}
-            alt="Detská izba na mieru"
-          />
+          <div className="relative">
+            <div id="detske-izby" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Detské izby"
+              images={detskaiIzbaImages}
+              alt="Detská izba na mieru"
+            />
+          </div>
 
           {/* Galéria chodieb */}
-          <Gallery 
-            title="Chodby a predsiene"
-            images={chodbaImages}
-            alt="Chodba na mieru"
-          />
+          <div className="relative">
+            <div id="chodby" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Chodby a predsiene"
+              images={chodbaImages}
+              alt="Chodba na mieru"
+            />
+          </div>
 
           {/* Galéria kúpeľní a WC */}
-          <Gallery 
-            title="Kúpeľne a WC"
-            images={kupelnaWcImages}
-            alt="Kúpeľňa na mieru"
-          />
+          <div className="relative">
+            <div id="kupelne" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Kúpeľne a WC"
+              images={kupelnaWcImages}
+              alt="Kúpeľňa na mieru"
+            />
+          </div>
 
           {/* Galéria montáží */}
-          <Gallery 
-            title="Montáže nábytku"
-            images={montazeImages}
-            alt="Montáž nábytku"
-          />
+          <div className="relative">
+            <div id="montaze" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Montáže nábytku"
+              images={montazeImages}
+              alt="Montáž nábytku"
+            />
+          </div>
 
           {/* Galéria vizualizácií */}
-          <Gallery 
-            title="Vizualizácie"
-            images={vizualizacieImages}
-            alt="Vizualizácia nábytku"
-          />
+          <div className="relative">
+            <div id="vizualizacie" className="absolute -top-[280px]"></div>
+            <Gallery 
+              title="Vizualizácie"
+              images={vizualizacieImages}
+              alt="Vizualizácia nábytku"
+            />
+          </div>
         </div>
       </section>
 

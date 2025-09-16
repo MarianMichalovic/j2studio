@@ -4,14 +4,13 @@ import React from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Image from "next/image"
 import { useIsMobile } from "@/components/ui/use-mobile"
-import { url } from "inspector"
 
 const slides = [
   {
     label: "Skrine",
     subtitle: "Vstavaná a voľne stojaca skriňa na mieru",
     image: "/anywebp/skrina1.webp",
-    url: "/sluzby/#skrine"
+    url: "/sluzby/#vstavane-skrine"
   },
   {
     label: "Kuchyne",
@@ -29,7 +28,7 @@ const slides = [
     label: "Vstavaný nábytok",
     subtitle: "Vstavaný nábytok na mieru",
     image: "/anywebp/telka.webp",
-    url: "/sluzby/#vstavaný-nábytok"
+    url: "/sluzby/#vstavane-skrine"
   },
 ]
 
