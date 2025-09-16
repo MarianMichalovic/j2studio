@@ -8,42 +8,50 @@ const posteleModels = [
   {
     name: "Mobox Altobox",
     image: "/postele/altobox.webp",
-    description: "Moderná posteľ s čistými líniami"
+    description: "Moderná posteľ s čistými líniami",
+    url: "https://elemo.hu/elemo-agyak/mobox/altobox/"
   },
   {
     name: "Elebed Convexo", 
     image: "/postele/convexo.webp",
-    description: "Elegantný dizajn s mäkkými tvarmi"
+    description: "Elegantný dizajn s mäkkými tvarmi",
+    url: "https://elemo.hu/elemo-agyak/elebed/convexo-agy"
   },
   {
     name: "Základné čisté",
     image: "/postele/krásny sn.webp", 
-    description: "Komfortná posteľ pre pokojný spánok"
+    description: "Komfortná posteľ pre pokojný spánok",
+    url: "https://elemo.hu/elemo-agyak/pure/"
   },
   {
     name: "Mobox",
     image: "/postele/mobox.webp",
-    description: "Minimalistický štýl s úložným priestorom"
+    description: "Minimalistický štýl s úložným priestorom",
+    url: "https://elemo.hu/elemo-agyak/mobox/mobox2/"
   },
   {
     name: "Podpisový sen",
     image: "/postele/pekný sen.webp",
-    description: "Luxusná posteľ pre maximálny komfort"
+    description: "Luxusná posteľ pre maximálny komfort",
+    url: "https://elemo.hu/elemo-agyak/dream/"
   },
   {
     name: "Elebed Plano",
     image: "/postele/plano.webp",
-    description: "Jednoduchý a praktický dizajn"
+    description: "Jednoduchý a praktický dizajn",
+    url: "https://elemo.hu/elemo-agyak/elebed/plano-agy-agytet-fejveg-elemo"
   },
   {
     name: "Signature Retreat",
     image: "/postele/retreat.webp",
-    description: "Odpočinková oáza vo vašej spálni"
+    description: "Odpočinková oáza vo vašej spálni",
+    url: "https://elemo.hu/elemo-agyak/retreat/"
   },
   {
     name: "Elebed Sienna",
     image: "/postele/sienna.webp",
-    description: "Teplý a útulný dizajn"
+    description: "Teplý a útulný dizajn",
+    url: "https://elemo.hu/elemo-agyak/elebed/sienna/"
   }
 ]
 
@@ -161,7 +169,13 @@ export default function PostelePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posteleModels.map((model, index) => {
               return (
-                <div key={index} className="group">
+                <a 
+                  key={index} 
+                  href={model.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block"
+                >
                   <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
                     <Image
                       src={model.image}
@@ -172,14 +186,14 @@ export default function PostelePage() {
                     />
                   </div>
                   <div className="mt-4 text-center">
-                    <h3 className="text-lg font-semibold text-neutral-900">
+                    <h3 className="text-lg font-semibold text-neutral-900 group-hover:text-[#FDBA74] transition-colors duration-300">
                       {model.name}
                     </h3>
                     <p className="text-sm text-neutral-600 mt-1">
                       {model.description}
                     </p>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
