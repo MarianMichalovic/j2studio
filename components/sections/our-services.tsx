@@ -32,45 +32,45 @@ export default function OurServices() {
     <section 
       className="relative pt-32 pb-24 bg-cover bg-center bg-no-repeat flex items-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('/bg-2.jpg')`
+      backgroundImage: `url('/bg-3.jpg')`
       }}
     >
       <div className="max-w-7xl mx-auto px-6 text-center text-white">
-        {/* Hlavný nadpis */}
-        <h2 className="text-4xl lg:text-6xl font-bold mb-16">
-          Naše služby
-        </h2>
+      {/* Hlavný nadpis */}
+      <h2 className="text-4xl lg:text-6xl font-bold mb-16">
+        Naše služby
+      </h2>
 
-        {/* Služby grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 mb-12">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className={`p-10 lg:p-16 hover:border-white/60 transition-all duration-300 group cursor-pointer ${
-              index < 2 ? 'lg:border-r-2 lg:border-white/30' : ''
-              }`}
-            >
-              <div className="flex justify-center mb-6 text-white group-hover:text-orange-300 transition-colors duration-300">
-              {service.icon}
-              </div>
-              <h3 className="text-2xl lg:text-3xl font-semibold">
-              {service.title}
-              </h3>
-              <p className="text-2xl lg:text-3xl font-semibold opacity-90">
-              {service.subtitle}
-              </p>
-            </div>
-          ))}
+      {/* Služby grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 mb-12">
+        {services.map((service, index) => (
+        <div 
+          key={index} 
+          className={`p-10 lg:p-16 hover:border-white/60 transition-all duration-300 group cursor-pointer ${
+          index < 2 ? 'lg:border-r-2 lg:border-white/30' : ''
+          }`}
+        >
+          <div className="flex justify-center mb-6 text-white group-hover:text-orange-300 transition-colors duration-300">
+          {service.icon}
+          </div>
+          <h3 className="text-2xl lg:text-3xl font-semibold">
+          {service.title}
+          </h3>
+          <p className="text-2xl lg:text-3xl font-semibold opacity-90">
+          {service.subtitle}
+          </p>
         </div>
+        ))}
+      </div>
 
-        {/* Tlačidlo */}
-        <div className="flex justify-center">
-          <a href="/sluzby"
-            className="bg-white text-black hover:bg-gray-100 px-8 py-4 font-semibold"
-          >
-            Zistiť viac
-          </a>
-        </div>
+      {/* Tlačidlo */}
+      <div className="flex justify-center">
+        <a href="/sluzby"
+        className="bg-white text-black hover:bg-gray-100 px-8 py-4 font-semibold"
+        >
+        Zistiť viac
+        </a>
+      </div>
       </div>
     </section>
   )
