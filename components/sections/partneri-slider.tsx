@@ -14,47 +14,56 @@ const partneriLogos = [
   {
     name: "Domana",
     logo: "/partneri/domana.png",
-    alt: "Domana logo"
+    alt: "Domana logo",
+    url: "https://eshop.domana.sk/sk/?SubmitCurrency=1&id_currency=1"
   },
   {
     name: "Kramar",
     logo: "/partneri/kramar.svg", 
-    alt: "Kramar logo"
+    alt: "Kramar logo",
+    url: "https://kramar.studio/"
   },
   {
     name: "Lamelio",
     logo: "/partneri/lamelio_logo_white.svg",
-    alt: "Lamelio logo"
+    alt: "Lamelio logo",
+    url: "https://lamelio.sk/"
   },
   {
     name: "Gereg",
     logo: "/partneri/logo-gereg.svg",
-    alt: "Gereg logo"
+    alt: "Gereg logo",
+    url: "https://geregstudio.sk/"
   },
   {
     name: "Modo Design",
     logo: "/partneri/mododesign.png",
-    alt: "Modo Design logo"
+    alt: "Modo Design logo",
+    url: "https://www.mododesign.sk/"
   },
   {
     name: "Nesia",
     logo: "/partneri/nesia.png",
-    alt: "Nesia logo"
+    alt: "Nesia logo",
+    url: "https://nesia.sk/"
   },
   {
     name: "Postele",
     logo: "/partneri/postelelogo.svg",
-    alt: "Postele logo"
+    alt: "Postele logo",
+    url: "https://postele-spalne.sk/"
   },
   {
     name: "Postele Royal",
     logo: "/partneri/posteleroyal.svg",
-    alt: "Postele Royal logo"
+    alt: "Postele Royal logo",
+    url: "https://posteleroyal.sk/"
   },
   {
     name: "Ulicky Design",
     logo: "/partneri/ulicky-design.png",
-    alt: "Ulicky Design logo"
+    alt: "Ulicky Design logo",
+    url: "https://ulickydesign.sk/"
   }
 ]
 
