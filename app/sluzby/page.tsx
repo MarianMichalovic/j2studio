@@ -253,7 +253,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {services.map((service, index) => (
               <div key={index} className="group text-center">
-                <div className="flex justify-center mb-6 text-neutral-700 group-hover:text-orange-500 transition-colors duration-300">
+                <div className="flex justify-center mb-6 text-neutral-700 group-hover:text-[#FDBA74] transition-colors duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-neutral-900 mb-4">
