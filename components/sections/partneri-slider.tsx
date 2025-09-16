@@ -121,7 +121,7 @@ export default function PartneriSlider() {
                   rel="noopener noreferrer"
                   className="block"
                 >
-                  <div className="flex opacity-40 hover:opacity-100 items-center justify-center h-40 bg-white duration-300 p-8 cursor-pointer">
+                  <div className="flex opacity-40 hover:opacity-100 items-center justify-center h-40 duration-300 p-8 cursor-pointer">
                     <Image
                       src={partner.logo}
                       alt={partner.alt}
