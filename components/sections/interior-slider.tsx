@@ -4,27 +4,32 @@ import React from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Image from "next/image"
 import { useIsMobile } from "@/components/ui/use-mobile"
+import { url } from "inspector"
 
 const slides = [
   {
     label: "Skrine",
-    subtitle: "Custom built-in and freestanding wardrobes",
+    subtitle: "Vstavaná a voľne stojaca skriňa na mieru",
     image: "/anywebp/skrina1.webp",
+    url: "/sluzby/#skrine"
   },
   {
     label: "Kuchyne",
-    subtitle: "Modern and classic kitchen solutions",
+    subtitle: "Moderné a klasické kuchynské riešenia",
     image: "/anywebp/kuch1.webp",
+    url: "/sluzby/#kuchyne"
   },
   {
     label: "Detské izby",
-    subtitle: "Creative spaces for children",
+    subtitle: "Kreatívne priestory pre deti",
     image: "/new/prva.jpg",
+    url: "/sluzby/#detske-izby"
   },
   {
     label: "Vstavaný nábytok",
-    subtitle: "Interior and entrance doors",
+    subtitle: "Vstavaný nábytok na mieru",
     image: "/anywebp/telka.webp",
+    url: "/sluzby/#vstavaný-nábytok"
   },
 ]
 
@@ -46,8 +51,9 @@ export default function InteriorSlider() {
         >
           <CarouselContent className="">
             {slides.map((slide, idx) => (
-              <CarouselItem key={idx} className="md:basis-1/3 lg:basis-1/3">
-                <div className="relative h-[350px] overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                <CarouselItem key={idx} className="md:basis-1/3 lg:basis-1/3">
+                <a href={slide.url} className="block">
+                  <div className="relative h-[350px] overflow-hidden rounded-lg shadow-lg group cursor-pointer">
                   <Image
                     src={slide.image}
                     alt={slide.label}
@@ -58,12 +64,13 @@ export default function InteriorSlider() {
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
                     <div className="text-center text-white">
-                      <h3 className="text-3xl md:text-4xl font-bold mb-2">{slide.label}</h3>
-                      <p className="text-lg opacity-90">{slide.subtitle}</p>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-2">{slide.label}</h3>
+                    <p className="text-lg opacity-90">{slide.subtitle}</p>
                     </div>
                   </div>
-                </div>
-              </CarouselItem>
+                  </div>
+                </a>
+                </CarouselItem>
             ))}
           </CarouselContent>
           {!isMobile && (
