@@ -60,7 +60,7 @@ export default function HowWeWork() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 mb-16">
           {processes.map((process, index) => (
             <div key={index} className="text-center group">
-              <div className="flex justify-center mb-4 text-neutral-700 group-hover:text-orange-500 transition-colors duration-300">
+              <div className="flex justify-center mb-4 text-neutral-700 group-hover:text-[#FDBA74] transition-colors duration-300">
                 {process.icon}
               </div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-1 leading-[0.95em]">
