@@ -5,7 +5,8 @@
   "scripts": {
     "optimize": "node optimize-images.js",
     "optimize:webp": "node optimize-images.js --format webp",
-    "optimize:jpeg": "node optimize-images.js --format jpeg"
+    "optimize:jpeg": "node optimize-images.js --format jpeg",
+    "optimize:galeria": "node optimize-galeria.js"
   },
   "dependencies": {
     "sharp": "^0.33.0",

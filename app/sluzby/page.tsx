@@ -48,25 +48,28 @@ const kuchyneImages = [
   "/img/kuchyna/1000002090.webp", 
   "/img/kuchyna/1000002091.webp",
   "/img/kuchyna/1000002092.webp",
-  "/img/kuchyna/1000002094.webp",
-  "/img/kuchyna/1000002095.webp",
+  "/img/kuchyna/1000002093.webp",
   "/img/kuchyna/1000002556.webp",
   "/img/kuchyna/1000002557.webp",
   "/img/kuchyna/1000002968.webp",
   "/img/kuchyna/1000002969.webp",
-  "/img/kuchyna/1000002970.webp",
   "/img/kuchyna/1000002971.webp",
   "/img/kuchyna/1000002972.webp",
+  "/img/kuchyna/20240202_121253.webp",
+  "/img/kuchyna/20240202_121713.webp",
+  "/img/kuchyna/20240202_121731.webp",
+  "/img/kuchyna/20240327_182347.webp",
+  "/img/kuchyna/20240327_182354.webp",
+  "/img/kuchyna/20240718_073452.webp",
   "/img/kuchyna/IMG_3477.webp",
   "/img/kuchyna/IMG_3478.webp",
   "/img/kuchyna/IMG_3479.webp",
   "/img/kuchyna/IMG_3480.webp",
-  "/img/kuchyna/IMG_4039.webp",
-  "/img/kuchyna/IMG_4040.webp",
-  "/img/kuchyna/IMG_4041.webp",
   "/img/kuchyna/IMG_4178.webp",
   "/img/kuchyna/IMG_4181.webp",
-  "/img/kuchyna/IMG_4199.webp"
+  "/img/kuchyna/IMG_4199.webp",
+  "/img/kuchyna/IMG_4631.webp",
+  "/img/kuchyna/IMG_4632.webp"
 ]
 
 const montazeImages = [
@@ -91,7 +94,6 @@ const montazeImages = [
   "/img/montaze/IMG_2796.webp",
   "/img/montaze/IMG_2811.webp",
   "/img/montaze/IMG_3340.webp",
-  // "/img/montaze/IMG_3835.webp",
   "/img/montaze/IMG_3936.webp",
   "/img/montaze/IMG_3978.webp",
   "/img/montaze/IMG_4070.webp",
@@ -107,7 +109,124 @@ const vizualizacieImages = [
   "/img/vizualizacie/20.webp",
   "/img/vizualizacie/21.webp",
   "/img/vizualizacie/22.webp",
-  "/img/vizualizacie/23.webp"
+  "/img/vizualizacie/23.webp",
+  "/img/vizualizacie/Kuchyna V1_1.webp",
+  "/img/vizualizacie/Kuchyna V1_1_1.webp",
+  "/img/vizualizacie/Kuchyna V1_1_2.webp",
+  "/img/vizualizacie/Kuchyna V2_1.webp",
+  "/img/vizualizacie/Kuchyna V2_1_1.webp",
+  "/img/vizualizacie/Kuchyna V2_1_2.webp",
+  "/img/vizualizacie/b2 k+o V1_1.webp",
+  "/img/vizualizacie/b2 k+o V1_2.webp",
+  "/img/vizualizacie/b2 k+o V1_3.webp",
+  "/img/vizualizacie/b2 k+o V1_4.webp",
+  "/img/vizualizacie/popadakova kuchyna vizual++++.webp",
+  "/img/vizualizacie/nagy zamestnanecka kuchynka vizual.webp",
+  "/img/vizualizacie/Enscape_2025-01-17-12-31-55.webp",
+  "/img/vizualizacie/Enscape_2025-01-17-12-34-01.webp",
+  "/img/vizualizacie/Enscape_2025-01-17-12-35-48.webp"
+]
+
+const spalnaImages = [
+  "/img/spalna/1000000894.webp",
+  "/img/spalna/1000000895.webp",
+  "/img/spalna/IMG_20210730_224303.webp",
+  "/img/spalna/IMG_20210730_224310.webp",
+  "/img/spalna/IMG_20210730_224341.webp",
+  "/img/spalna/IMG_20210730_224352.webp",
+  "/img/spalna/IMG_20211117_074757.webp",
+  "/img/spalna/IMG_20211117_074846.webp",
+  "/img/spalna/IMG_20211222_175235.webp",
+  "/img/spalna/IMG_20211222_175252.webp",
+  "/img/spalna/IMG_3192.webp",
+  "/img/spalna/IMG_3193.webp",
+  "/img/spalna/IMG_4137.webp",
+  "/img/spalna/IMG_4273.webp",
+  "/img/spalna/IMG_4276.webp"
+]
+
+const obyvackaImages = [
+  "/img/obyvacka/IMG_20211117_074622.webp",
+  "/img/obyvacka/IMG_2236.webp",
+  "/img/obyvacka/IMG_2398.webp",
+  "/img/obyvacka/IMG_3105.webp",
+  "/img/obyvacka/IMG_3106.webp",
+  "/img/obyvacka/IMG_3108.webp",
+  "/img/obyvacka/IMG_3111.webp",
+  "/img/obyvacka/IMG_4196.webp",
+  "/img/obyvacka/IMG_4197.webp",
+  "/img/obyvacka/IMG_4633.webp",
+  "/img/obyvacka/IMG_4907.webp"
+]
+
+const detskaiIzbaImages = [
+  "/img/detska-izba/IMG_20220209_105057.webp",
+  "/img/detska-izba/IMG_20220209_105100.webp",
+  "/img/detska-izba/IMG_20220209_105106.webp",
+  "/img/detska-izba/IMG_20220209_105109.webp",
+  "/img/detska-izba/IMG_20220209_105123.webp",
+  "/img/detska-izba/IMG_3224.webp",
+  "/img/detska-izba/IMG_3225.webp",
+  "/img/detska-izba/IMG_4629.webp",
+  "/img/detska-izba/IMG_4762.webp",
+  "/img/detska-izba/IMG_4763.webp"
+]
+
+const chodbaImages = [
+  "/img/chodba/20240423_131145.webp",
+  "/img/chodba/20240423_131154.webp",
+  "/img/chodba/20240423_131219.webp",
+  "/img/chodba/20240423_131424.webp",
+  "/img/chodba/20240807_130019.webp",
+  "/img/chodba/20240807_130035.webp",
+  "/img/chodba/20240807_130046.webp",
+  "/img/chodba/IMG_2540.webp",
+  "/img/chodba/IMG_2545.webp",
+  "/img/chodba/IMG_2548.webp",
+  "/img/chodba/IMG_2979.webp",
+  "/img/chodba/IMG_4380.webp",
+  "/img/chodba/IMG_4387.webp",
+  "/img/chodba/IMG_4634.webp",
+  "/img/chodba/IMG_4635.webp"
+]
+
+const kupelnaWcImages = [
+  "/img/kupena-wc/20240402_084415.webp",
+  "/img/kupena-wc/20240402_084437.webp",
+  "/img/kupena-wc/20240402_084444.webp",
+  "/img/kupena-wc/20240402_084451.webp",
+  "/img/kupena-wc/IMG_2235.webp",
+  "/img/kupena-wc/IMG_2399.webp",
+  "/img/kupena-wc/IMG_2542.webp",
+  "/img/kupena-wc/IMG_4347.webp",
+  "/img/kupena-wc/IMG_4348.webp",
+  "/img/kupena-wc/IMG_4349.webp",
+  "/img/kupena-wc/IMG_4625.webp",
+  "/img/kupena-wc/IMG_4626.webp",
+  "/img/kupena-wc/IMG_4898.webp",
+  "/img/kupena-wc/IMG_4899.webp"
+]
+
+const vstavaneSkrineImages = [
+  "/img/vstavane-skrine-satnik/20241031_144059.webp",
+  "/img/vstavane-skrine-satnik/20241031_144138.webp",
+  "/img/vstavane-skrine-satnik/20241115_154419.webp",
+  "/img/vstavane-skrine-satnik/20241115_154547.webp",
+  "/img/vstavane-skrine-satnik/20241115_154549.webp",
+  "/img/vstavane-skrine-satnik/20241115_154552.webp",
+  "/img/vstavane-skrine-satnik/20241115_154554.webp",
+  "/img/vstavane-skrine-satnik/IMG_20210528_153445.webp",
+  "/img/vstavane-skrine-satnik/IMG_20220309_153904.webp",
+  "/img/vstavane-skrine-satnik/IMG_20220309_153919.webp",
+  "/img/vstavane-skrine-satnik/IMG_20220309_153944.webp",
+  "/img/vstavane-skrine-satnik/IMG_20220309_153955.webp",
+  "/img/vstavane-skrine-satnik/IMG_20250515_102151.webp",
+  "/img/vstavane-skrine-satnik/IMG_20250515_102202.webp",
+  "/img/vstavane-skrine-satnik/IMG_20250515_102212.webp",
+  "/img/vstavane-skrine-satnik/IMG_20250515_102220.webp",
+  "/img/vstavane-skrine-satnik/IMG_20250515_102250.webp",
+  "/img/vstavane-skrine-satnik/IMG_20250515_102300.webp",
+  "/img/vstavane-skrine-satnik/IMG_20250515_102315.webp"
 ]
 
 export default function ServicesPage() {
@@ -199,6 +318,48 @@ export default function ServicesPage() {
             title="Kuchyne na mieru"
             images={kuchyneImages}
             alt="Kuchyňa na mieru"
+          />
+
+          {/* Galéria obývačiek */}
+          <Gallery 
+            title="Obývačky"
+            images={obyvackaImages}
+            alt="Obývačka na mieru"
+          />
+
+          {/* Galéria spální */}
+          <Gallery 
+            title="Spálne"
+            images={spalnaImages}
+            alt="Spálňa na mieru"
+          />
+
+          {/* Galéria vstavných skríň */}
+          <Gallery 
+            title="Vstavané skrine a šatníky"
+            images={vstavaneSkrineImages}
+            alt="Vstavané skrine na mieru"
+          />
+
+          {/* Galéria detských izieb */}
+          <Gallery 
+            title="Detské izby"
+            images={detskaiIzbaImages}
+            alt="Detská izba na mieru"
+          />
+
+          {/* Galéria chodieb */}
+          <Gallery 
+            title="Chodby a predsiene"
+            images={chodbaImages}
+            alt="Chodba na mieru"
+          />
+
+          {/* Galéria kúpeľní a WC */}
+          <Gallery 
+            title="Kúpeľne a WC"
+            images={kupelnaWcImages}
+            alt="Kúpeľňa na mieru"
           />
 
           {/* Galéria montáží */}

@@ -2,11 +2,17 @@
 
 import React from "react"
 import Image from "next/image"
-import Gallery from "@/components/ui/gallery"
 
 // Galéria obrázkov postelí
 const posteleImages: string[] = [
-  // Sem pridáme obrázky postelí, ak nejaké existujú
+  "/postele/altobox.webp",
+  "/postele/convexo.webp", 
+  "/postele/krásny sn.webp",
+  "/postele/mobox.webp",
+  "/postele/pekný sen.webp",
+  "/postele/plano.webp",
+  "/postele/retreat.webp",
+  "/postele/sienna.webp"
 ]
 
 export default function PostelePage() {
@@ -108,27 +114,46 @@ export default function PostelePage() {
         </div>
       </section>
 
-      {/* Galéria postelí */}
-      {posteleImages.length > 0 && (
-        <section className="pb-24">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
-                Naše realizácie
-              </h2>
-              <p className="text-lg text-neutral-600">
-                Pozrite si ukážky našich vyrobených postelí
-              </p>
-            </div>
-            
-            <Gallery 
-              title="Postele na mieru"
-              images={posteleImages}
-              alt="Posteľ na mieru"
-            />
+      {/* Grid postelí */}
+      <section className="pb-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+              Naše postele
+            </h2>
+            <p className="text-lg text-neutral-600">
+              Pozrite si naše modely postelí na mieru
+            </p>
           </div>
-        </section>
-      )}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {posteleImages.map((image, index) => {
+              // Extrahujeme názov z cesty k obrázku
+              const fileName = image.split('/').pop()?.replace('.webp', '') || '';
+              const modelName = fileName.charAt(0).toUpperCase() + fileName.slice(1);
+              
+              return (
+                <div key={index} className="group">
+                  <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
+                    <Image
+                      src={image}
+                      alt={`Posteľ ${modelName}`}
+                      fill
+                      className="object-contain group-hover:scale-105 transition-transform duration-300 p-4"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <h3 className="text-lg font-semibold text-neutral-900">
+                      {modelName}
+                    </h3>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       {/* CTA sekcia */}
       <section className="pb-24">

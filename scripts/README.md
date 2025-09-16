@@ -1,6 +1,28 @@
 # Optimalizácia obrázkov pre J2Studio
 
-Tento skript automaticky optimalizuje všetky obrázky v priečinkoch `img/kuchyna` a `img/montaze`.
+Tento skript automaticky optimalizuje obrázky v rôznych priečinkoch projektu.
+
+## Dostupné skripty
+
+### 1. Optimalizácia galérie (NOVÉ!)
+Spracuje všetky obrázky v `public/galeria` a jej podpriečinkoch.
+- **Kvalita**: 65% (optimálna pre web galérie)
+- **Formát**: WebP
+- **Výstup**: `public/galeria_optimized_webp/`
+
+**Spustenie:**
+```bash
+# Jednoduché spustenie (Windows)
+optimize-galeria.bat
+
+# Alebo manuálne
+cd scripts
+npm install
+npm run optimize:galeria
+```
+
+### 2. Optimalizácia kuchýň a montáží
+Spracuje obrázky v `img/kuchyna` a `img/montaze`.
 
 ## Rýchle spustenie
 
