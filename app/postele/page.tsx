@@ -3,16 +3,48 @@
 import React from "react"
 import Image from "next/image"
 
-// Galéria obrázkov postelí
-const posteleImages: string[] = [
-  "/postele/altobox.webp",
-  "/postele/convexo.webp", 
-  "/postele/krásny sn.webp",
-  "/postele/mobox.webp",
-  "/postele/pekný sen.webp",
-  "/postele/plano.webp",
-  "/postele/retreat.webp",
-  "/postele/sienna.webp"
+// Galéria postelí s vlastnými názvami
+const posteleModels = [
+  {
+    name: "Mobox Altobox",
+    image: "/postele/altobox.webp",
+    description: "Moderná posteľ s čistými líniami"
+  },
+  {
+    name: "Elebed Convexo", 
+    image: "/postele/convexo.webp",
+    description: "Elegantný dizajn s mäkkými tvarmi"
+  },
+  {
+    name: "Základné čisté",
+    image: "/postele/krásny sn.webp", 
+    description: "Komfortná posteľ pre pokojný spánok"
+  },
+  {
+    name: "Mobox",
+    image: "/postele/mobox.webp",
+    description: "Minimalistický štýl s úložným priestorom"
+  },
+  {
+    name: "Podpisový sen",
+    image: "/postele/pekný sen.webp",
+    description: "Luxusná posteľ pre maximálny komfort"
+  },
+  {
+    name: "Elebed Plano",
+    image: "/postele/plano.webp",
+    description: "Jednoduchý a praktický dizajn"
+  },
+  {
+    name: "Signature Retreat",
+    image: "/postele/retreat.webp",
+    description: "Odpočinková oáza vo vašej spálni"
+  },
+  {
+    name: "Elebed Sienna",
+    image: "/postele/sienna.webp",
+    description: "Teplý a útulný dizajn"
+  }
 ]
 
 export default function PostelePage() {
@@ -127,17 +159,13 @@ export default function PostelePage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posteleImages.map((image, index) => {
-              // Extrahujeme názov z cesty k obrázku
-              const fileName = image.split('/').pop()?.replace('.webp', '') || '';
-              const modelName = fileName.charAt(0).toUpperCase() + fileName.slice(1);
-              
+            {posteleModels.map((model, index) => {
               return (
                 <div key={index} className="group">
                   <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
                     <Image
-                      src={image}
-                      alt={`Posteľ ${modelName}`}
+                      src={model.image}
+                      alt={`Posteľ ${model.name}`}
                       fill
                       className="object-contain group-hover:scale-105 transition-transform duration-300 p-4"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -145,8 +173,11 @@ export default function PostelePage() {
                   </div>
                   <div className="mt-4 text-center">
                     <h3 className="text-lg font-semibold text-neutral-900">
-                      {modelName}
+                      {model.name}
                     </h3>
+                    <p className="text-sm text-neutral-600 mt-1">
+                      {model.description}
+                    </p>
                   </div>
                 </div>
               );
