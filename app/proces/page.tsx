@@ -49,15 +49,17 @@ export default function ProcessPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero sekcia */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold text-neutral-900 mb-8">
-            Proces
-          </h1>
-          <p className="text-lg text-neutral-600 leading-relaxed">
-            Ako bude prebiehať naša spolupráca? Objavte náš osvedčený proces – od vášho prvotného dopytu, cez 
-            individuálne plánovanie, až po profesionálnu montáž.
-          </p>
+      <section className="pt-32 pb-10 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center">
+            <h1 className="text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight">
+              Proces
+            </h1>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+              Ako bude prebiehať naša spolupráca? Objavte náš osvedčený proces – od vášho prvotného dopytu, cez 
+              individuálne plánovanie, až po profesionálnu montáž.
+            </p>
+          </div>
         </div>
       </section>
 
