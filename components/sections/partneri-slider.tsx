@@ -115,15 +115,22 @@ export default function PartneriSlider() {
           >
             {partneriLogos.map((partner, index) => (
               <SwiperSlide key={index}>
-                <div className="flex opacity-40 items-center justify-center h-40 bg-white duration-300 p-8 rounded-lg shadow-sm hover:shadow-md">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.alt}
-                    width={200}
-                    height={100}
-                    className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                </div>
+                <a 
+                  href={partner.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="flex opacity-40 hover:opacity-100 items-center justify-center h-40 bg-white duration-300 p-8 rounded-lg shadow-sm hover:shadow-md cursor-pointer">
+                    <Image
+                      src={partner.logo}
+                      alt={partner.alt}
+                      width={200}
+                      height={100}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </a>
               </SwiperSlide>
             ))}
           </Swiper>
