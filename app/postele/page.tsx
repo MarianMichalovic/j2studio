@@ -123,7 +123,7 @@ export default function PostelePage() {
       </section>
 
       {/* Proces objednávky */}
-      <section className="pb-24 bg-gray-50">
+      <section className="pb-24">
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
