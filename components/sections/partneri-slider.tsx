@@ -75,8 +75,9 @@ export default function PartneriSlider() {
         <div className="relative">
           <Swiper
             modules={[Autoplay, Pagination]}
-            spaceBetween={40}
+            spaceBetween={30}
             slidesPerView={2}
+            centeredSlides={false}
             loop={true}
             autoplay={{
               delay: 3000,
@@ -90,22 +91,22 @@ export default function PartneriSlider() {
             breakpoints={{
               640: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 40,
               },
               768: {
                 slidesPerView: 4,
-                spaceBetween: 60,
+                spaceBetween: 50,
               },
               1024: {
-                slidesPerView: 5,
-                spaceBetween: 80,
+                slidesPerView: 4,
+                spaceBetween: 60,
               },
             }}
             className="partneri-swiper"
           >
             {partneriLogos.map((partner, index) => (
               <SwiperSlide key={index}>
-                <div className="flex opacity-40 items-center justify-center h-40 w-[230px] bg-white duration-300 p-8">
+                <div className="flex opacity-40 items-center justify-center h-40 bg-white duration-300 p-8 rounded-lg shadow-sm hover:shadow-md">
                   <Image
                     src={partner.logo}
                     alt={partner.alt}
